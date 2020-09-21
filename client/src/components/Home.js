@@ -1,11 +1,11 @@
 import React from "react";
 
-function Apply() {
+function Home() {
     return (
         <div>
-            <h1>Apply</h1>
+            <h1>Home</h1>
         </div>
     );
 }
 
-export default Apply;
+export default Home;

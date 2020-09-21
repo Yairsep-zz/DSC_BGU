@@ -1,11 +1,11 @@
 import React from "react";
 
-function Apply() {
+function Partners() {
     return (
         <div>
-            <h1>Apply</h1>
+            <h1>Partners</h1>
         </div>
     );
 }
 
-export default Apply;
+export default Partners;
