@@ -7,18 +7,7 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import MenuIcon from '@material-ui/icons/Menu';
 import {classes} from "istanbul-lib-coverage";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import About from "../pages/About";
-import Apply from "../pages/Apply";
-import ClubMembers from "../pages/ClubMembers";
-import CoreTeam from "../pages/CoreTeam";
-import Events from "../pages/Events";
-import Partners from "../pages/Partners";
-import Projects from "../pages/Projects";
-import MenuList from "@material-ui/core/MenuList";
 import MenuItem from "@material-ui/core/MenuItem";
-import Home from "../pages/Home";
-import ContactUs from "../pages/ContactUs";
 
 
 function NavigationBar() {

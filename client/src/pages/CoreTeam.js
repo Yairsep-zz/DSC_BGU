@@ -22,7 +22,7 @@ function CoreTeam() {
     return (
         <div>
             <h1>Core Team</h1>
-            {/*{console.log(coreTeam)}*/}
+
             {coreTeam.map(({id , name , pic , facebook , instagram , linkedIn}) => (
                 <Card className={classes.root}>
                     <CardActionArea>
