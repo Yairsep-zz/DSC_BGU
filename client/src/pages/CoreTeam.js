@@ -14,6 +14,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faFacebookF , } from '@fortawesome/free-brands-svg-icons';
 import {  faInstagram , } from '@fortawesome/free-brands-svg-icons';
 import {  faGithub , } from '@fortawesome/free-brands-svg-icons';
+import {  faLinkedin , } from '@fortawesome/free-brands-svg-icons';
 function CoreTeam() {
 
     const collection = useFirestore().collection("CoreTeam");
@@ -23,7 +24,7 @@ function CoreTeam() {
         <div>
             <h1>Core Team</h1>
 
-            {coreTeam.map(({id , name, role , pic , facebook , instagram , linkedIn}) => (
+            {coreTeam.map(({id , name, role , pic , facebook , instagram , linkedin}) => (
                 <Card className={classes.root}>
                     <CardActionArea>
                         <CardMedia
@@ -50,23 +51,18 @@ function CoreTeam() {
                                 style={{ paddingLeft: '0px' }}
                             >
                                 <li>
-                                    <a href="https://www.facebook.com/dscvjit/">
+                                    <a href={facebook}>
                                         <FontAwesomeIcon icon={faFacebookF}/>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://twitter.com/dscvjit">
-                                        <FontAwesomeIcon icon={['fab', 'twitter']} />
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/dscvjit/">
+                                    <a href={instagram}>
                                         <FontAwesomeIcon icon={faInstagram} />
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://github.com/dscvjit">
-                                        <FontAwesomeIcon icon={faGithub} />
+                                    <a href={linkedin}>
+                                        <FontAwesomeIcon icon={faLinkedin} />
                                     </a>
                                 </li>
                             </ul>
