@@ -10,7 +10,7 @@ function Partners() {
         <div>
             <h1>Partners</h1>
             <br/>
-            {partners.map(({name}) => (
+            {partners.map(({id ,name , pic , url}) => (
                 <div>
                     {name}
                 </div>

@@ -23,7 +23,7 @@ function CoreTeam() {
         <div>
             <h1>Core Team</h1>
 
-            {coreTeam.map(({id , name , pic , facebook , instagram , linkedIn}) => (
+            {coreTeam.map(({id , name, role , pic , facebook , instagram , linkedIn}) => (
                 <Card className={classes.root}>
                     <CardActionArea>
                         <CardMedia
@@ -35,8 +35,9 @@ function CoreTeam() {
                             <Typography gutterBottom variant="h5" component="h2">
                                 {name}
                             </Typography>
-                            {/*<Typography variant="body2" color="textSecondary" component="p">*/}
-                            {/*</Typography>*/}
+                            <Typography variant="body2" color="textSecondary" component="p">
+                                {role}
+                            </Typography>
                         </CardContent>
                     </CardActionArea>
                     <CardActions>
