@@ -25,11 +25,13 @@ function CoreTeam() {
             <h1>Core Team</h1>
 
             {coreTeam.map(({id , name, role , pic , facebook , instagram , linkedin}) => (
+                <div>
+                    {/*<img src={pic}/>*/}
                 <Card className={classes.root}>
                     <CardActionArea>
-                        <CardMedia
+                        <CardMedia style={{height: "400px" , width: "400px"}}
+                            component="img" src={pic}
                             className={classes.media}
-                            image={pic}
                             title={name}
                         />
                         <CardContent>
@@ -69,6 +71,7 @@ function CoreTeam() {
                         </div>
                     </CardActions>
                 </Card>
+                </div>
                 ))}
         </div>
     );
