@@ -14,7 +14,7 @@ function CoreTeam() {
                 Core Team Members
             </Typography>
             <div className={'teamCards'}>
-                {coreTeam.map((member) => <MemberCard member={member}/>)}
+                {coreTeam.map((member) => <MemberCard member={member} key={member.id}/>)}
             </div>
         </div>
     );
