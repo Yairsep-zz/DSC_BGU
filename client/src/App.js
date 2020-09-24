@@ -8,7 +8,7 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Partners from "./pages/Partners";
-import CoreTeam from "./pages/CoreTeam";
+import CoreTeam from "./pages/CoreTeam/CoreTeam";
 import ClubMembers from "./pages/ClubMembers";
 import Events from "./pages/Events";
 import Projects from "./pages/Projects";

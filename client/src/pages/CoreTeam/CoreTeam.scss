@@ -1,0 +1,11 @@
+.coreTeamPage {
+  padding: 10px;
+  .header{
+
+  }
+  .teamCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
