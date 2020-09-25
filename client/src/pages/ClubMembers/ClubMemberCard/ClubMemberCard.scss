@@ -1,0 +1,32 @@
+.ClubMemberCard{
+  .card{
+    margin: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 150px;
+    height: 200px;
+    .AvatarContainer{
+      display: flex;
+      justify-content: center;
+      .avatar{
+        display: flex;
+        width: 100px;
+        height: 100px;
+        border: darkgray solid 3px;
+      }
+    }
+    .content{
+      .socialRow{
+        height: 20px;
+        display: flex;
+        justify-content: space-around;
+        .socialIcon{
+          color: darkgray;
+          height: 15px;
+        }
+      }
+    }
+  }
+}

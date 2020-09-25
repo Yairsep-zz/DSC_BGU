@@ -6,14 +6,12 @@ import {FirebaseAppProvider} from "reactfire";
 import {firebaseConfig} from "./firebaseConfig";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Home from "./pages/Home";
-import About from "./pages/About";
 import Partners from "./pages/Partners";
-import CoreTeam from "./pages/CoreTeam/CoreTeam";
-import ClubMembers from "./pages/ClubMembers";
 import Events from "./pages/Events";
 import Projects from "./pages/Projects";
 import Apply from "./pages/Apply";
-import ContactUs from "./pages/ContactUs";
+import Contact from "./pages/Contact";
+import Members from "./pages/Members";
 
 function App() {
     return (
@@ -26,17 +24,11 @@ function App() {
                             <Route path="/Home">
                                 <Home/>
                             </Route>
-                            <Route path="/About">
-                                <About/>
-                            </Route>
                             <Route path="/Partners">
                                 <Partners/>
                             </Route>
-                            <Route path="/CoreTeam">
-                                <CoreTeam/>
-                            </Route>
-                            <Route path="/ClubMembers">
-                                <ClubMembers/>
+                            <Route path="/Members">
+                                <Members/>
                             </Route>
                             <Route path="/Events">
                                 <Events/>
@@ -47,8 +39,8 @@ function App() {
                             <Route path="/Apply">
                                 <Apply/>
                             </Route>
-                            <Route path="/ContactUs">
-                                <ContactUs/>
+                            <Route path="/Contact">
+                                <Contact/>
                             </Route>
                         </Switch>
                     </Router>

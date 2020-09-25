@@ -3,6 +3,8 @@ import {Form, InputGroup , Button} from "react-bootstrap";
 import Col from "react-bootstrap/Col";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {useFirestore} from "reactfire";
+import * as firebase from "firebase";
+
 
 //TODO: Talk with Roei regarding bootstrap
 
@@ -23,9 +25,20 @@ function Application() {
         console.log("Submit clicked")
     }
 
+    const uploadResume = (e) => {
+
+        const storageRef = firebase.storage().ref("Resumes/");
+        const file = e.target.files[0];
+        const fileRef = storageRef.child(file.name);
+        fileRef.put(file).then(() => {
+            console.log("Uploaded a file")
+        })
+
+    }
+
     return (
         <div>
-            <h1>Application</h1>
+            <h1>Club Member Application</h1>
             <Form>
                 <Form.Row>
                     <Form.Group as={Col} controlId="formGridFullName">
@@ -45,14 +58,16 @@ function Application() {
 
                 <Form.Group>
                     <Form.Label>Please Upload your resume</Form.Label>
-                    <Form.File
-                        className="position-relative"
-                        required
-                        name="file"
-                        label="File"
-                        id="validationFormik107"
-                        feedbackTooltip
-                    />
+                    <br/>
+                    <input type="file" onChange={uploadResume}/>
+                    {/*<Form.File*/}
+                    {/*    className="position-relative"*/}
+                    {/*    required*/}
+                    {/*    name="file"*/}
+                    {/*    label="File"*/}
+                    {/*    id="validationFormik107"*/}
+                    {/*    feedbackTooltip*/}
+                    {/*/>*/}
                 </Form.Group>
                 <Form.Group controlId="exampleForm.SelectCustom">
                     <Form.Label>Choose your major</Form.Label>
@@ -93,9 +108,12 @@ function Application() {
                     <Form.Control as="textarea" aria-label="With textarea" />
                 </Form.Group>
 
+                {/*TODO: Fix Submit function*/}
                 <Button onClick={Submit} variant="primary" type="submit">
                     Submit
                 </Button>
+                <br/><br/>
+
             </Form>
         </div>
     );

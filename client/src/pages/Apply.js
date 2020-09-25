@@ -12,8 +12,6 @@ function Apply() {
 
     return (
         <div>
-            <h1>Apply</h1>
-
             <br/><br/>
             {/*{!isSigned ? <GoogleIntegration/> : <Application/>}*/}
             <Application/>

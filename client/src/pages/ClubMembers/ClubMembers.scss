@@ -1,0 +1,11 @@
+.ClubMembersPage {
+  padding: 10px;
+  .header{
+
+  }
+  .ClubMembersCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

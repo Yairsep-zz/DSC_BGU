@@ -3,12 +3,9 @@ import {Link} from "react-router-dom"
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
-import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
 import MenuIcon from '@material-ui/icons/Menu';
 import {classes} from "istanbul-lib-coverage";
 import MenuItem from "@material-ui/core/MenuItem";
-
 
 function NavigationBar() {
 
@@ -19,24 +16,24 @@ function NavigationBar() {
                     <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                         <MenuIcon />
                     </IconButton>
+
+                    {/*TODO:ADD DSC BGU LOGO*/}
+                    {/*<Link href="/">*/}
+                    {/*    <a className="navbar-brand">*/}
+                    {/*        <img style={{width: "150px" , height: "70px"}} src="DSCwebLogo.png" alt="logo" />*/}
+                    {/*    </a>*/}
+                    {/*</Link>*/}
+
                     <MenuItem variant="h6" className={classes.title} component={Link} to="/Home">
                         Home
-                    </MenuItem>
-
-                    <MenuItem variant="h6" className={classes.title} component={Link} to="/About">
-                        About
                     </MenuItem>
 
                     <MenuItem variant="h6" className={classes.title} component={Link} to="/Partners">
                         Partners
                     </MenuItem>
 
-                    <MenuItem variant="h6" className={classes.title} component={Link} to="/CoreTeam">
-                        Core Team
-                    </MenuItem>
-
-                    <MenuItem variant="h6" className={classes.title} component={Link} to="/ClubMembers">
-                        Club Members
+                    <MenuItem variant="h6" className={classes.title} component={Link} to="/Members">
+                        Members
                     </MenuItem>
 
                     <MenuItem variant="h6" className={classes.title} component={Link} to="/Events">
@@ -47,14 +44,14 @@ function NavigationBar() {
                         Projects
                     </MenuItem>
 
+                    <MenuItem variant="h6" className={classes.title} component={Link} to="/Contact">
+                        Contact
+                    </MenuItem>
+
                     <MenuItem variant="h6" className={classes.title} component={Link} to="/Apply">
                         Apply
                     </MenuItem>
 
-                    <MenuItem variant="h6" className={classes.title} component={Link} to="/ContactUs">
-                        Contact Us
-                    </MenuItem>
-                    <Button color="inherit">Login</Button>
                 </Toolbar>
             </AppBar>
         </div>
