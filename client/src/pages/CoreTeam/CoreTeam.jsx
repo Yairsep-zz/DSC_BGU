@@ -11,7 +11,7 @@ function CoreTeam() {
     return (
         <div className={'coreTeamPage'}>
             <Typography variant="h2" gutterBottom className={'header'}>
-                Core Team Members
+                Core Team
             </Typography>
             <div className={'teamCards'}>
                 {coreTeam.map((member) => <MemberCard member={member} key={member.id}/>)}

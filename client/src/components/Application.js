@@ -29,6 +29,7 @@ function Application() {
 
         const storageRef = firebase.storage().ref("Resumes/");
         const file = e.target.files[0];
+        // TODO: Make file name as "Yair Sepunaru CV"
         const fileRef = storageRef.child(file.name);
         fileRef.put(file).then(() => {
             console.log("Uploaded a file")
