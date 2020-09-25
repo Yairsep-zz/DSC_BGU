@@ -12,14 +12,15 @@ import Projects from "./pages/Projects";
 import Apply from "./pages/Apply";
 import Contact from "./pages/Contact";
 import Members from "./pages/Members";
+import Spinner from "react-bootstrap/Spinner";
 
 function App() {
     return (
         <FirebaseAppProvider firebaseConfig={firebaseConfig}>
             <div className="App">
-                <Suspense fallback={<div>Loading...</div>}>
                     <Router>
                         <NavigationBar/>
+                        <Suspense fallback={<div><Spinner animation="border" variant="primary" /></div>}>
                         <Switch>
                             <Route path="/Home">
                                 <Home/>
@@ -43,8 +44,8 @@ function App() {
                                 <Contact/>
                             </Route>
                         </Switch>
+                        </Suspense>
                     </Router>
-                </Suspense>
             </div>
         </FirebaseAppProvider>
     );
