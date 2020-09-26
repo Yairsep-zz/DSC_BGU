@@ -1,18 +1,18 @@
 import React from "react";
-import './PartnerCard.scss'
+import './EventCard.scss'
 import {Avatar, Card, CardContent, CardMedia} from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
 
-const PartnerCard = (props)=>{
 
-    const {partner} = props;
-    const {name, logo , url} = partner;
+const EventCard = (props)=>{
 
+    const {event} = props;
+    const {name, url , pic} = event;
     return(
-        <div className={'PartnerCard'} >
+        <div className={'EventCard'} >
             <Card className={'card'} elevation={5}>
                 <CardMedia className={'AvatarContainer'}>
-                    <Avatar alt={name} src={logo} className={'avatar'}/>
+                    <Avatar alt={name} src={pic} className={'avatar'}/>
                 </CardMedia>
                 <CardContent className={'content'}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -28,4 +28,4 @@ const PartnerCard = (props)=>{
     )
 }
 
-export default PartnerCard;
+export default EventCard

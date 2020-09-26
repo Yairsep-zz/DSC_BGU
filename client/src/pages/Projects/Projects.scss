@@ -1,0 +1,11 @@
+.ProjectsPage {
+  padding: 10px;
+  .header{
+
+  }
+  .ProjectCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

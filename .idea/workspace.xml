@@ -60,12 +60,35 @@
       <change afterPath="$PROJECT_DIR$/client/build/static/js/runtime-main.571e4c93.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/build/static/js/runtime-main.571e4c93.js.map" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/build/static/media/logo.5d5d9eef.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/Partners/Partners.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/Partners/PartnersCard/PartnerCard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/Partners/PartnersCard/PartnerCard.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/Apply/Apply.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/Contact/Contact.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/Events/Events.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/Events/EventsCard/EventCard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/Events/EventsCard/EventCard.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/Home/Home.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/Projects/ProjectCard/ProjectCard.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/Projects/Projects.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Partners.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Partners/Partners.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/ProjectCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Projects/ProjectCard/ProjectCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/About.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Apply.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Apply/Apply.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/ClubMembers/ClubMemberCard/ClubMemberCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Members/ClubMembers/ClubMemberCard/ClubMemberCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/ClubMembers/ClubMemberCard/ClubMemberCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Members/ClubMembers/ClubMemberCard/ClubMemberCard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/ClubMembers/ClubMembers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Members/ClubMembers/ClubMembers.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/ClubMembers/ClubMembers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Members/ClubMembers/ClubMembers.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Contact/Contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/CoreTeam/CoreTeam.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Members/CoreTeam/CoreTeam.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/CoreTeam/CoreTeam.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Members/CoreTeam/CoreTeam.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/CoreTeam/MemberCard/MemberCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Members/CoreTeam/MemberCard/MemberCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/CoreTeam/MemberCard/MemberCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Members/CoreTeam/MemberCard/MemberCard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Events.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Events/Events.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Members.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Members/Members.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Partners/Partners.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Partners/Partners.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Partners/PartnersCard/PartnerCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Partners/PartnersCard/PartnerCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Projects/Projects.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,11 +123,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\yairs\IdeaProjects\DSC_BGU\client\src\pages\Partners" />
-      <recent name="C:\Users\yairs\IdeaProjects\DSC_BGU\client\public" />
-      <recent name="C:\Users\yairs\IdeaProjects\DSC_BGU\client\src\data\pictures\logos" />
-      <recent name="C:\Users\yairs\IdeaProjects\DSC_BGU\client\src\pages\ClubMembers" />
-      <recent name="C:\Users\yairs\IdeaProjects\DSC_BGU\client\src\pages\ClubMembers\ClubMemberCard" />
+      <recent name="C:\Users\yairs\IdeaProjects\DSC_BGU\client\src\pages\Home" />
+      <recent name="C:\Users\yairs\IdeaProjects\DSC_BGU\client\src\pages\Contact" />
+      <recent name="C:\Users\yairs\IdeaProjects\DSC_BGU\client\src\pages\Apply" />
+      <recent name="C:\Users\yairs\IdeaProjects\DSC_BGU\client\src\pages\Projects\ProjectCard" />
+      <recent name="C:\Users\yairs\IdeaProjects\DSC_BGU\client\src\pages\Projects" />
     </key>
   </component>
   <component name="RunManager">
@@ -134,7 +157,7 @@
       <workItem from="1600840733544" duration="17286000" />
       <workItem from="1600982472125" duration="8282000" />
       <workItem from="1601045672734" duration="1356000" />
-      <workItem from="1601047045505" duration="5918000" />
+      <workItem from="1601047045505" duration="8469000" />
     </task>
     <task id="LOCAL‎00001" summary="Firebase Configuration">
       <created>1600704325323</created>
@@ -244,7 +267,13 @@
       <option name="presentableId" value="LOCAL‎00018" />
       <updated>1601110899637</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL‎00019" summary="Partenrs Page Updated">
+      <created>1601113479426</created>
+      <option name="number" value="LOCAL‎00019" />
+      <option name="presentableId" value="LOCAL‎00019" />
+      <updated>1601113479426</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,18 +301,19 @@
     <MESSAGE value="Mimize nav bar (Members)&#10;Upload CV function&#10;Need to fix submit function" />
     <MESSAGE value="Minimize nav bar (Members)&#10;Bootstrap loading spinner&#10;Upload CV function&#10;Need to fix submit function" />
     <MESSAGE value="Application construction" />
-    <option name="LAST_COMMIT_MESSAGE" value="Application construction" />
+    <MESSAGE value="Partenrs Page Updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Partenrs Page Updated" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2619" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601111171700">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2619" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601111171700" />
-    <state x="2316" y="0" key="CommitChangelistDialog2" timestamp="1601110899021">
+    <state x="2316" y="0" key="CommitChangelistDialog2" timestamp="1601114118388">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="264" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1600856609638" />
-    <state x="2316" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601110899021" />
+    <state x="2316" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601114118388" />
     <state x="2103" y="76" width="1024" height="572" key="DiffContextDialog" timestamp="1601108578146">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -317,11 +347,11 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601045621837" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601110900956">
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601113481751">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1600856611706" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601110900956" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601113481751" />
     <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601109810105">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -339,7 +369,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/client/src/pages/Apply.js</url>
+          <url>file://$PROJECT_DIR$/client/src/pages/Apply/Apply.js</url>
           <line>1</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>

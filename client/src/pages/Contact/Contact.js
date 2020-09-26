@@ -3,6 +3,7 @@ import {Form, InputGroup, Button} from "react-bootstrap";
 import Col from "react-bootstrap/Col";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {useFirestore} from "reactfire";
+import GoogleIntegration from "../../components/GoogleIntegration";
 
 function Contact() {
 
@@ -20,7 +21,7 @@ function Contact() {
     return (
         <div>
             <h1>Contact Us</h1>
-
+            <GoogleIntegration/>
             <Form>
                 <Form.Row>
                     <Form.Group as={Col} controlId="formGridFullName">

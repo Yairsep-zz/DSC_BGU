@@ -1,15 +1,15 @@
 import React from "react";
-import './PartnerCard.scss'
 import {Avatar, Card, CardContent, CardMedia} from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
+import './ProjectCard.scss'
 
-const PartnerCard = (props)=>{
+const ProjectCard = (props)=> {
 
-    const {partner} = props;
-    const {name, logo , url} = partner;
+    const {project} = props;
+    const {name, logo , url} = project;
 
     return(
-        <div className={'PartnerCard'} >
+        <div className={'ProjectCard'} >
             <Card className={'card'} elevation={5}>
                 <CardMedia className={'AvatarContainer'}>
                     <Avatar alt={name} src={logo} className={'avatar'}/>
@@ -28,4 +28,4 @@ const PartnerCard = (props)=>{
     )
 }
 
-export default PartnerCard;
+export default ProjectCard;

@@ -1,0 +1,11 @@
+.eventPage {
+  padding: 10px;
+  .header{
+
+  }
+  .eventCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

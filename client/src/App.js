@@ -5,13 +5,13 @@ import NavigationBar from "./components/NavigationBar";
 import {FirebaseAppProvider} from "reactfire";
 import {firebaseConfig} from "./firebaseConfig";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
 import Partners from "./pages/Partners/Partners";
-import Events from "./pages/Events";
-import Projects from "./pages/Projects";
-import Apply from "./pages/Apply";
-import Contact from "./pages/Contact";
-import Members from "./pages/Members";
+import Events from "./pages/Events/Events";
+import Projects from "./pages/Projects/Projects";
+import Apply from "./pages/Apply/Apply";
+import Contact from "./pages/Contact/Contact";
+import Members from "./pages/Members/Members";
 import Spinner from "react-bootstrap/Spinner";
 
 function App() {
