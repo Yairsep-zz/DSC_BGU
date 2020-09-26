@@ -3,6 +3,7 @@ import './Partners.scss'
 import {useFirestore, useFirestoreCollectionData} from "reactfire";
 import Typography from "@material-ui/core/Typography";
 import PartnerCard from "./PartnersCard/PartnerCard";
+import Footer from "../../components/Footer";
 
 
 function Partners() {
@@ -18,6 +19,7 @@ function Partners() {
             <div className={'PartnersCards'}>
                 {partners.map((partner) => <PartnerCard partner={partner} key={partner.id}/>)}
             </div>
+            <Footer/>
         </div>
     );
 }

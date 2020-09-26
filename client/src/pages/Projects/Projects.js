@@ -3,6 +3,7 @@ import {useFirestore, useFirestoreCollectionData} from "reactfire";
 import Typography from "@material-ui/core/Typography";
 import ProjectCard from "./ProjectCard/ProjectCard";
 import './Projects.scss'
+import Footer from "../../components/Footer";
 
 function Projects() {
 
@@ -18,6 +19,7 @@ function Projects() {
             <div className={'ProjectCards'}>
                 {projects.map((project) => <ProjectCard project={project} key={project.id}/>)}
             </div>
+            <Footer/>
         </div>
     );
 }

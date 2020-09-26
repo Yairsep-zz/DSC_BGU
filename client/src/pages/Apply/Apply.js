@@ -1,6 +1,7 @@
 import React , {useState} from "react";
 import GoogleIntegration from "../../components/GoogleIntegration";
 import Application from "../../components/Application";
+import Footer from "../../components/Footer";
 
 function Apply() {
 
@@ -15,6 +16,7 @@ function Apply() {
             <br/><br/>
             {/*{!isSigned ? <GoogleIntegration/> : <Application/>}*/}
             <Application/>
+            <Footer/>
         </div>
     );
 }

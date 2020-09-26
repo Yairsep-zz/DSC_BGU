@@ -4,6 +4,7 @@ import Col from "react-bootstrap/Col";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {useFirestore} from "reactfire";
 import GoogleIntegration from "../../components/GoogleIntegration";
+import Footer from "../../components/Footer";
 
 function Contact() {
 
@@ -43,6 +44,7 @@ function Contact() {
                     Submit
                 </Button>
             </Form>
+            <Footer/>
         </div>
     );
 }
