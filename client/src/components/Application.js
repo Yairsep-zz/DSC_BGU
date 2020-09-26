@@ -19,7 +19,7 @@ function Application() {
     const [techSkills , setTechSkills] = useState("");
     const [voluntary , setVoluntary] = useState("");
 
-    
+
     const Submit = () => {
         applications_Collection.add({
             Name: "Yair",
@@ -47,6 +47,7 @@ function Application() {
     }
 
     const skills = ["Java" , "Python" , "C++" , "ML" , "Web Development" , "React" , "Vue" , "Angular" , "Node.js" , "Mobile Development" , "React Native" , "Flutter", "Kotlin" , "Git" , "Cyber Security"];
+    const availableDays = ["Sunday" , "Monday" , "Tuesday" , "Wednesday" , "Thursday"];
 
     return (
         <div>
@@ -71,15 +72,6 @@ function Application() {
                 <Form.Group>
                     <Form.Label>Please Upload your resume</Form.Label>
                     <br/>
-                    <input type="file" onChange={uploadResume}/>
-                    {/*<Form.File*/}
-                    {/*    className="position-relative"*/}
-                    {/*    required*/}
-                    {/*    name="file"*/}
-                    {/*    label="File"*/}
-                    {/*    id="validationFormik107"*/}
-                    {/*    feedbackTooltip*/}
-                    {/*/>*/}
                 </Form.Group>
                 <Form.Group controlId="exampleForm.SelectCustom">
                     <Form.Label>Choose your major</Form.Label>
@@ -104,8 +96,22 @@ function Application() {
 
                 </Form.Group>
 
+                <Form.Group id="daysAvailability">
+                    <Form.Label>What are your available days?</Form.Label>
+                    {availableDays.map((opting) => (
+                        <div  key={`inline-${opting}`} className="mb-3">
+                            <Form.Check inline label={opting + " After 18:00"} type={"checkbox"} id={`custom-inline-${opting}-1`}/>
+                        </div>
+                    ))}
+                </Form.Group>
+
                 <Form.Group controlId="formGridPhoneNumber">
                     <Form.Label>Did you ever take part in a voluntary program? Please describe</Form.Label>
+                    <Form.Control as="textarea" rows="3" />
+                </Form.Group>
+
+                <Form.Group controlId="shareWithUs">
+                    <Form.Label>Why would you like to join DSC? (Interests , projects you want to promote etc.)</Form.Label>
                     <Form.Control as="textarea" rows="3" />
                 </Form.Group>
 
@@ -116,6 +122,7 @@ function Application() {
                 <br/><br/>
 
             </Form>
+            <input type="file" onChange={uploadResume}/>
         </div>
     );
 }
