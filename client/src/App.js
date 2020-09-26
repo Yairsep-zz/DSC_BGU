@@ -6,7 +6,7 @@ import {FirebaseAppProvider} from "reactfire";
 import {firebaseConfig} from "./firebaseConfig";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Home from "./pages/Home";
-import Partners from "./pages/Partners";
+import Partners from "./pages/Partners/Partners";
 import Events from "./pages/Events";
 import Projects from "./pages/Projects";
 import Apply from "./pages/Apply";
