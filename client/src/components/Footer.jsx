@@ -18,7 +18,7 @@ function Footer() {
                                     justifyContent: 'center'
                                 }}
                             >
-                                <h5><Copyright/>Developed by DSC BGU Core Team </h5>
+                                <h5><Copyright/> Developed by DSC BGU Core Team </h5>
                             </div>
                         </div>
                     </div>

@@ -2,7 +2,7 @@ import React from "react";
 import './MemberCard.scss'
 import {Avatar, Card, CardContent, CardMedia} from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
-import {ContactMail, Facebook, Instagram, LinkedIn, Mail} from '@material-ui/icons';
+import {Facebook, Instagram, LinkedIn, Mail} from '@material-ui/icons';
 
 const MemberCard = (props)=>{
     const {member} = props;

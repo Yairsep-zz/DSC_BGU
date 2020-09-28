@@ -1,5 +1,4 @@
 import React, {Suspense} from 'react';
-import logo from './logo.svg';
 import './App.css';
 import NavigationBar from "./components/NavigationBar";
 import {FirebaseAppProvider} from "reactfire";
@@ -12,7 +11,8 @@ import Projects from "./pages/Projects/Projects";
 import Apply from "./pages/Apply/Apply";
 import Contact from "./pages/Contact/Contact";
 import Members from "./pages/Members/Members";
-import Spinner from "react-bootstrap/Spinner";
+import CircularProgress from '@material-ui/core/CircularProgress';
+
 
 function App() {
     return (
@@ -20,7 +20,7 @@ function App() {
             <div className="App">
                     <Router>
                         <NavigationBar/>
-                        <Suspense fallback={<div><Spinner animation="border" variant="primary" /></div>}>
+                        <Suspense fallback={<div><CircularProgress/></div>}>
                         <Switch>
                             <Route path="/Home">
                                 <Home/>

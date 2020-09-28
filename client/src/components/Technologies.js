@@ -2,8 +2,6 @@ import React from 'react';
 
 function Technologies() {
 
-    const websiteLogo =".../public/website.png";
-
         return (
             <section className="services-area ptb-100 bg-gray">
                 <div className="container">

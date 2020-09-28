@@ -1,6 +1,4 @@
 import React from "react";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {ContactMail, Facebook, GitHub, InsertChart, Instagram, LinkedIn, Mail, Twitter} from '@material-ui/icons';
 import ClubSocialIcons from "../../components/ClubSocialIcons";
 import Technologies from "../../components/Technologies";
 import Footer from "../../components/Footer";
