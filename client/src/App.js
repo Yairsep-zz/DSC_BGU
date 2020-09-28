@@ -20,7 +20,7 @@ function App() {
             <div className="App">
                     <Router>
                         <NavigationBar/>
-                        <Suspense fallback={<div><CircularProgress/></div>}>
+                        <Suspense fallback={<div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100vh'}}><CircularProgress/></div>}>
                         <Switch>
                             <Route path="/Home">
                                 <Home/>

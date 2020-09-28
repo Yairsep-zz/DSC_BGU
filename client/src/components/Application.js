@@ -27,8 +27,15 @@ function Application() {
     const [whyJoin, setWhyJoin] = useState("");
     const [shareWithUs, setShareWithUs] = useState("");
     const [displayOther, setDisplayOther] = useState(false);
-
     const [resume , setResume] = useState(null);
+
+    const programingLanguages = ["Java", "Python", "C++"];
+    const webDev = ["React", "Vue", "Angular", "Node.js"];
+    const mobileDev = ["React Native", "Flutter", "Kotlin"];
+    const googleTech = ["Firebase", "Google Cloud Platform", "TensorFlow"];
+    const versionControl = ["Git"]
+    const skills = ["Machine Learning", "Cyber Security"];
+    const availableDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"];
 
     const Submit = () => {
         applications_Collection.add({
@@ -53,15 +60,6 @@ function Application() {
 
         setResume(e.target.files[0])
     }
-
-    const programingLanguages = ["Java", "Python", "C++"];
-    const webDev = ["React", "Vue", "Angular", "Node.js"];
-    const mobileDev = ["React Native", "Flutter", "Kotlin"];
-    const versionControl = ["Git"]
-    const skills = ["Machine Learning", "Cyber Security"];
-    const availableDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"];
-
-
     const showOther = () => {
         setDisplayOther(true);
     }
@@ -122,7 +120,7 @@ function Application() {
                 </FormControl>
 
                 <br/><br/><br/><br/>
-                <InputLabel>Technical Skills</InputLabel>
+                <InputLabel>Technical Skills (Optional)</InputLabel>
                 <FormControl component="fieldset">
                     <FormLabel component="legend">Programing Languages</FormLabel>
                     <FormGroup>
@@ -167,6 +165,18 @@ function Application() {
                         ))}
                     </FormGroup>
                 </FormControl>
+                <FormControl component="fieldset">
+                    <FormLabel component="legend">Google Techs</FormLabel>
+                    <FormGroup>
+                        {googleTech.map((skill) => (
+                            <FormControlLabel
+                                control={<Checkbox name={skill}/>}
+                                label={skill}
+                            />
+                        ))}
+                    </FormGroup>
+                </FormControl>
+
                 <FormControl component="fieldset">
                     <FormLabel component="legend">Other</FormLabel>
                     <FormGroup>
