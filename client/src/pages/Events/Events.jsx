@@ -13,11 +13,11 @@ function Events() {
 
     return (
         <div>
-            <div className={'PartnersPage'}>
+            <div className={'EventsPage'}>
                 <Typography variant="h2" gutterBottom className={'header'}>
                     Events
                 </Typography>
-                <div className={'PartnersCards'}>
+                <div className={'EventsCards'}>
                     {events.map((event) => <EventCard event={event} key={event.id}/>)}
                 </div>
             </div>

@@ -1,6 +1,6 @@
 import React , {useState} from "react";
 import GoogleIntegration from "../../components/GoogleIntegration";
-import Application from "../../components/Application";
+import Application from "./Appliction/Application";
 import Footer from "../../components/Footer";
 
 function Apply() {

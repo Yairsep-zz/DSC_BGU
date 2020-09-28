@@ -12,6 +12,7 @@ import Apply from "./pages/Apply/Apply";
 import Contact from "./pages/Contact/Contact";
 import Members from "./pages/Members/Members";
 import CircularProgress from '@material-ui/core/CircularProgress';
+import Content from "./pages/Content/Content";
 
 
 function App() {
@@ -42,6 +43,9 @@ function App() {
                             </Route>
                             <Route path="/Contact">
                                 <Contact/>
+                            </Route>
+                            <Route path="/Content">
+                                <Content/>
                             </Route>
                         </Switch>
                         </Suspense>

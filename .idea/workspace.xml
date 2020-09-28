@@ -20,15 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6357ff79-d7ba-41a3-a5e1-79182789428f" name="Default Changelist" comment="Application construction">
+      <change afterPath="$PROJECT_DIR$/client/src/components/ConstructionPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/ApplicaitonFailed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/Content/Content.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/Content/Content.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/Content/ContentCard/ContentCard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/Content/ContentCard/ContentCard.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/Content/ML/MLpage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/Content/MobileDev/MobileDev.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/Content/PythonDev/PythonDev.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/Content/WebDev/WebDev.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/build/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Application.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Application.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/Application.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Contact/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Contact/Contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/NavigationBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/NavigationBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Apply/Apply.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Apply/Apply.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Events/Events.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Events/Events.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Events/Events.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Events/Events.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,23 +73,21 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\yairs\IdeaProjects\DSC_BGU\client\src\pages\Apply\Appliction" />
       <recent name="C:\Users\yairs\IdeaProjects\DSC_BGU\client\public\pictures" />
       <recent name="C:\Users\yairs\IdeaProjects\DSC_BGU\client\src\data\pictures" />
       <recent name="C:\Users\yairs\IdeaProjects\DSC_BGU\client\public" />
       <recent name="C:\Users\yairs\IdeaProjects\DSC_BGU\client\src\pages\Home" />
-      <recent name="C:\Users\yairs\IdeaProjects\DSC_BGU\client\src\pages\Contact" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -100,7 +108,9 @@
       <workItem from="1600982472125" duration="8282000" />
       <workItem from="1601045672734" duration="1356000" />
       <workItem from="1601047045505" duration="10974000" />
-      <workItem from="1601127038170" duration="14482000" />
+      <workItem from="1601127038170" duration="14813000" />
+      <workItem from="1601276630919" duration="985000" />
+      <workItem from="1601277641115" duration="4523000" />
     </task>
     <task id="LOCAL‎00001" summary="Firebase Configuration">
       <created>1600704325323</created>
@@ -228,7 +238,19 @@
       <option name="presentableId" value="LOCAL‎00021" />
       <updated>1601130918692</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL‎00022" summary="Transformation to MUI&#10;Application + CV connected to Firebase&#10;Contact us connected to Firebase">
+      <created>1601276568498</created>
+      <option name="number" value="LOCAL‎00022" />
+      <option name="presentableId" value="LOCAL‎00022" />
+      <updated>1601276568498</updated>
+    </task>
+    <task id="LOCAL‎00023" summary="Transformation to MUI&#10;Application + CV connected to Firebase&#10;Contact us connected to Firebase">
+      <created>1601277601162</created>
+      <option name="number" value="LOCAL‎00023" />
+      <option name="presentableId" value="LOCAL‎00023" />
+      <updated>1601277601162</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,18 +282,19 @@
     <MESSAGE value="Partenrs Page Updated" />
     <MESSAGE value="Clustering + Cards for pages 26/9" />
     <MESSAGE value="Reordering files&#10;Footer Component&#10;Initiating Home Page Construction" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reordering files&#10;Footer Component&#10;Initiating Home Page Construction" />
+    <MESSAGE value="Transformation to MUI&#10;Application + CV connected to Firebase&#10;Contact us connected to Firebase" />
+    <option name="LAST_COMMIT_MESSAGE" value="Transformation to MUI&#10;Application + CV connected to Firebase&#10;Contact us connected to Firebase" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2619" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601129514026">
+    <state x="2619" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601281241181">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2619" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601129514026" />
-    <state x="2316" y="0" key="CommitChangelistDialog2" timestamp="1601130917863">
+    <state x="2619" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601281241181" />
+    <state x="2316" y="0" key="CommitChangelistDialog2" timestamp="1601277600514">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="264" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1600856609638" />
-    <state x="2316" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601130917863" />
+    <state x="2316" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601277600514" />
     <state x="2103" y="76" width="1024" height="572" key="DiffContextDialog" timestamp="1601108578146">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -305,19 +328,19 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601045621837" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601274740823">
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601277602572">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1600856611706" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601274740823" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601277602572" />
     <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601109810105">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601109810105" />
-    <state width="600" height="428" key="javadoc.popup" timestamp="1601128716125">
+    <state width="600" height="428" key="javadoc.popup" timestamp="1601284276348">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="600" height="428" key="javadoc.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601128716125" />
+    <state width="600" height="428" key="javadoc.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601284276348" />
     <state x="2536" y="240" key="run.anything.popup" timestamp="1600720786436">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -335,6 +358,12 @@
           <url>file://$PROJECT_DIR$/client/src/pages/Apply/Apply.js</url>
           <line>1</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client/src/pages/Content/Content.jsx</url>
+          <line>25</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
