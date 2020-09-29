@@ -5,6 +5,7 @@ function MLpage() {
 
     return (
         <div>
+            <h1>Machine Learning</h1>
             <ConstructionPage/>
         </div>
     );

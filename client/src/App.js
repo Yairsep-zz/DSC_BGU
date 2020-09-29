@@ -14,6 +14,9 @@ import Members from "./pages/Members/Members";
 import CircularProgress from '@material-ui/core/CircularProgress';
 import Content from "./pages/Content/Content";
 import WebDev from "./pages/Content/WebDev/WebDev";
+import MobileDev from "./pages/Content/MobileDev/MobileDev";
+import PythonDev from "./pages/Content/PythonDev/PythonDev";
+import MLpage from "./pages/Content/ML/MLpage";
 
 
 function App() {
@@ -48,6 +51,18 @@ function App() {
                             </Route>
                             <Route path="/Content">
                                 <Content/>
+                            </Route>
+                            <Route path="/WebDev">
+                                <WebDev/>
+                            </Route>
+                            <Route path="/MobileDev">
+                                <MobileDev/>
+                            </Route>
+                            <Route path="/PythonDev">
+                                <PythonDev/>
+                            </Route>
+                            <Route path="/ML">
+                                <MLpage/>
                             </Route>
                         </Switch>
                         </Suspense>

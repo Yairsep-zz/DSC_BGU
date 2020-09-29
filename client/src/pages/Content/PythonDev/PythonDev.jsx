@@ -5,6 +5,7 @@ function PythonDev() {
 
     return (
         <div>
+            <h1>Python Development</h1>
             <ConstructionPage/>
         </div>
     );
