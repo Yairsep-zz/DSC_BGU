@@ -30,6 +30,8 @@ function Home() {
                         <ClubSocialIcons/>
                     </div>
                 </div>
+            </div>
+            <div>
                 <Technologies/>
             </div>
             <Footer/>

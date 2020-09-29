@@ -130,6 +130,7 @@ function Application() {
                                 label={skill}
                             />
                         ))}
+                        {console.log()}
                     </FormGroup>
                 </FormControl>
                 <FormControl component="fieldset">

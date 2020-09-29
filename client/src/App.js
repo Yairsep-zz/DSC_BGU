@@ -13,6 +13,7 @@ import Contact from "./pages/Contact/Contact";
 import Members from "./pages/Members/Members";
 import CircularProgress from '@material-ui/core/CircularProgress';
 import Content from "./pages/Content/Content";
+import WebDev from "./pages/Content/WebDev/WebDev";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
                         <NavigationBar/>
                         <Suspense fallback={<div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100vh'}}><CircularProgress/></div>}>
                         <Switch>
+                            <Route exact={true} path="/" component={Home} />
                             <Route path="/Home">
                                 <Home/>
                             </Route>
