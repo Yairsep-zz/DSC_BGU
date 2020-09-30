@@ -22,14 +22,7 @@
     <list default="true" id="6357ff79-d7ba-41a3-a5e1-79182789428f" name="Default Changelist" comment="Application construction">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/build/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/ClubSocialIcons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ClubSocialIcons.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/NavigationBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/NavigationBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Technologies.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Technologies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/css/Technologies.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Content/Content.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Content/Content.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Partners/Partners.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Partners/Partners.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +84,7 @@
       <workItem from="1601127038170" duration="14813000" />
       <workItem from="1601276630919" duration="985000" />
       <workItem from="1601277641115" duration="12616000" />
-      <workItem from="1601358470430" duration="12885000" />
+      <workItem from="1601358470430" duration="12997000" />
     </task>
     <task id="LOCAL‎00001" summary="Firebase Configuration">
       <created>1600704325323</created>
@@ -249,7 +242,13 @@
       <option name="presentableId" value="LOCAL‎00026" />
       <updated>1601389646219</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL‎00027" summary="Design fixes">
+      <created>1601474701285</created>
+      <option name="number" value="LOCAL‎00027" />
+      <option name="presentableId" value="LOCAL‎00027" />
+      <updated>1601474701285</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,17 +284,18 @@
     <MESSAGE value="Content + Construction Page" />
     <MESSAGE value="Routing fix - 29/9" />
     <MESSAGE value="Content Routing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Content Routing" />
+    <MESSAGE value="Design fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Design fixes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2619" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601281241181">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2619" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601281241181" />
-    <state x="2316" y="0" key="CommitChangelistDialog2" timestamp="1601389645592">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="264" y="0" key="CommitChangelistDialog2" timestamp="1601474700576">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="264" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1601358853539" />
+    <state x="264" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1601474700576" />
     <state x="2316" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601389645592" />
     <state x="264" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1601298660270" />
     <state x="2103" y="76" width="1024" height="572" key="DiffContextDialog" timestamp="1601108578146">
@@ -331,10 +331,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601045621837" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601389647733">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="368" y="147" key="Vcs.Push.Dialog.v2" timestamp="1601474704422">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1601358856342" />
+    <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1601474704422" />
     <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601389647733" />
     <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601109810105">
       <screen x="1920" y="0" width="1920" height="1040" />
