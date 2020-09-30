@@ -2,13 +2,12 @@ import React from "react";
 import ClubSocialIcons from "../../components/ClubSocialIcons";
 import Technologies from "../../components/Technologies";
 import Footer from "../../components/Footer";
+import Button from "@material-ui/core/Button";
+import {Link} from "react-router-dom";
 
 function Home() {
     return (
         <div className="container">
-            <div className="row">
-                <div className="col-lg-6 col-md-12">
-                    <div className="hero-content">
                         <h1>
                             Developers Student Clubs <br/>
                         </h1>
@@ -20,17 +19,12 @@ function Home() {
                             graduate programs with an interest in growing as a
                             developer are welcome.
                         </p>
-
-                        <a
-                            href="https://forms.gle/QLgdJBjJJFGLFqw1A"
-                            className="btn btn-primary"
-                        >
-                            Join DSC BGU
-                        </a>
+            <Link to="/Apply">
+            <Button variant="contained" size="large" color="primary">
+                Join DSC BGU
+            </Button>
+            </Link>
                         <ClubSocialIcons/>
-                    </div>
-                </div>
-            </div>
             <div>
                 <Technologies/>
             </div>

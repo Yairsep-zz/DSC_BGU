@@ -3,11 +3,6 @@ import {useFirestore, useFirestoreCollectionData, useFirestoreDoc, useFirestoreD
 import Typography from "@material-ui/core/Typography";
 import './Content.scss'
 import Footer from "../../components/Footer";
-import ContentCard from "./ContentCard/ContentCard";
-import WebDev from "./WebDev/WebDev";
-import MobileDev from "./MobileDev/MobileDev";
-import PythonDev from "./PythonDev/PythonDev";
-import MLpage from "./ML/MLpage";
 import CardActions from "@material-ui/core/CardActions";
 import Button from "@material-ui/core/Button";
 import CardContent from "@material-ui/core/CardContent";

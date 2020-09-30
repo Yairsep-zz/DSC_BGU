@@ -18,6 +18,7 @@ function Footer() {
                                     justifyContent: 'center'
                                 }}
                             >
+                                <img src='/pictures/logos/dscLogo.png' />
                                 <Copyright fontSize="small"/><h5> Developed by DSC BGU Core Team </h5>
                             </div>
                         </div>

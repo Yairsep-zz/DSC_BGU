@@ -40,13 +40,13 @@ function NavigationBar() {
                         Events
                     </MenuItem>
 
-                    <MenuItem variant="h6" className={classes.title} component={Link} to="/Content">
-                        Content
-                    </MenuItem>
+                    {/*<MenuItem variant="h6" className={classes.title} component={Link} to="/Content">*/}
+                    {/*    Content*/}
+                    {/*</MenuItem>*/}
 
-                    <MenuItem variant="h6" className={classes.title} component={Link} to="/Projects">
-                        Projects
-                    </MenuItem>
+                    {/*<MenuItem variant="h6" className={classes.title} component={Link} to="/Projects">*/}
+                    {/*    Projects*/}
+                    {/*</MenuItem>*/}
 
                     <MenuItem variant="h6" className={classes.title} component={Link} to="/Contact">
                         Contact

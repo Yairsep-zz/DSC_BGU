@@ -17,7 +17,7 @@ function Partners() {
                 Partners
             </Typography>
             <div className={'PartnersCards'}>
-                {partners.map((partner) => <PartnerCard partner={partner} key={partner.id}/>)}
+                {partners.filter(partner => !partner.name.includes("DSC")).map((partner) => <PartnerCard partner={partner} key={partner.id}/>)}
             </div>
             <Footer/>
         </div>

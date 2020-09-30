@@ -1,5 +1,4 @@
 import React from 'react';
-import "../css/Technologies.css"
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardMedia from "@material-ui/core/CardMedia";
@@ -8,10 +7,16 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import CardActions from "@material-ui/core/CardActions";
+import {Link} from "react-router-dom";
 
 const useStyles = makeStyles({
     root: {
         maxWidth: 345,
+        margin: "50px",
+    },
+    media: {
+        position: "relative",
+
     },
 });
 
@@ -36,99 +41,119 @@ function Technologies() {
             <h2>Technologies</h2>
             <div className="bar"/>
             <p>These are some of the technologies we mainly try to focus at DSC BGU</p>
-
+            <div style={{  display: "flex" , justifyContent: "center"}}>
             <Card className={classes.root}>
                 <CardActionArea>
                     <CardMedia
+                        className={classes.media}
                         component="img"
-                        alt="Contemplative Reptile"
+                        alt="Web Development"
                         height="140"
-                        image={urls.Web}
-                        title="Contemplative Reptile"
+                        image="pictures/technologies/webdev.jpg"
+                        title="Web Development"
                     />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="h2">
                             Web Development
                         </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">
-                            Club Content
+                            All of our content regarding Web Development
                         </Typography>
                     </CardContent>
                 </CardActionArea>
                 <CardActions>
-
+                    <Link to='/WebDev'>
+                        <Button size="small" color="primary">
+                            Enter
+                        </Button>
+                    </Link>
                 </CardActions>
             </Card>
+
+            <Card className={classes.root}>
+                <CardActionArea>
+                    <CardMedia
+                        component="img"
+                        alt="Mobile Development"
+                        height="140"
+                        image="pictures/technologies/Android.png"
+                        title="Mobile Development"
+                    />
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                            Mobile Development
+                        </Typography>
+                        <Typography variant="body2" color="textSecondary" component="p">
+                            All of our content regarding Mobile Development
+                        </Typography>
+                    </CardContent>
+                </CardActionArea>
+                <CardActions>
+                    <Link to='/MobileDev'>
+                        <Button size="small" color="primary">
+                            Enter
+                        </Button>
+                    </Link>
+                </CardActions>
+            </Card>
+
+            <Card className={classes.root}>
+                <CardActionArea>
+                    <CardMedia
+                        component="img"
+                        alt="Machine Learning"
+                        height="140"
+                        image="pictures/technologies/ml.jpg"
+                        title="Machine Learning"
+                    />
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                            Machine Learning
+                        </Typography>
+                        <Typography variant="body2" color="textSecondary" component="p">
+                            All of our content regarding Machine Learning
+                        </Typography>
+                    </CardContent>
+                </CardActionArea>
+                <CardActions>
+                    <Link to='/ML'>
+                        <Button size="small" color="primary">
+                            Enter
+                        </Button>
+                    </Link>
+                </CardActions>
+            </Card>
+
+            <Card className={classes.root}>
+                <CardActionArea>
+                    <CardMedia
+                        component="img"
+                        alt="Python Development"
+                        height="140"
+                        image="pictures/technologies/python-logo.png"
+                        title="Python Development"
+                    />
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                            Python Development
+                        </Typography>
+                        <Typography variant="body2" color="textSecondary" component="p">
+                            All of our content regarding Python Development
+                        </Typography>
+                    </CardContent>
+                </CardActionArea>
+                <CardActions>
+                    <Link to='/Python'>
+                        <Button size="small" color="primary">
+                            Enter
+                        </Button>
+                    </Link>
+                </CardActions>
+            </Card>
+            </div>
         </div>
     );
 }
 
 export default Technologies;
 
-
-// <section className="services-area ptb-100 bg-gray">
-//     <div className="container">
-//         <div className="section-title">
-//             <h2>Technologies</h2>
-//             <div className="bar" />
-//             <p>These are some of the technologies we mainly try to focus at DSC BGU</p>
-//         </div>
-//         <div className="row">
-//             <div className="col-lg-4 col-md-6">
-//                 <div className="single-services">
-//                     <img src={"pictures/technologies/website.png"} alt="website" />
-//                     <h3>Website Development</h3>
-//                 </div>
-//             </div>
-//             <div className="col-lg-4 col-md-6">
-//                 <div className="single-services">
-//                     <img src={"pictures/technologies/Android.png"} alt="android" />
-//
-//                     <h3>Android App Development</h3>
-//                 </div>
-//             </div>
-//
-//             <div className="col-lg-4 col-md-6">
-//                 <div className="single-services">
-//                     <img src={"pictures/technologies/Cloud.png"} alt="cloud logo" />
-//
-//                     <h3>Google Cloud</h3>
-//                 </div>
-//             </div>
-//
-//             <div className="col-lg-4 col-md-6">
-//                 <div className="single-services">
-//                     <img src={"pictures/technologies/machine-learning-logo.png"} alt="machine" />
-//                     <h3>Machine Learning</h3>
-//                 </div>
-//             </div>
-//
-//             <div className="col-lg-4 col-md-6">
-//                 <div className="single-services">
-//                     <img src={"pictures/technologies/iot.png"} alt="iot" />
-//                     <h3>Internet Of Things</h3>
-//                 </div>
-//             </div>
-//
-//             <div className="col-lg-4 col-md-6">
-//                 <div className="single-services">
-//                     <img src={"pictures/technologies/python-logo.png"} alt="python" />
-//
-//                     <h3>Python</h3>
-//                 </div>
-//             </div>
-//             <div className="col-lg-4 col-md-6">
-//                 <div className="single-services">
-//                     <img src={"pictures/technologies/javascript-logo.png"} alt="javascript" />
-//                     <h3>JavaScript</h3>
-//                 </div>
-//             </div>
-//             <div className="col-lg-4 col-md-6">
-//                 <div className="single-services">
-//                     <img src={"pictures/technologies/react-logo.png"} alt="react" />
-//                     <h3>React JS</h3>
-//                 </div>
-//             </div>
-//         </div>
-//     </div>
-// </section>
