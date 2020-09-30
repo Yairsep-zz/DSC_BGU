@@ -143,7 +143,7 @@ function Technologies() {
                     </CardContent>
                 </CardActionArea>
                 <CardActions>
-                    <Link to='/Python'>
+                    <Link to='/PythonDev'>
                         <Button size="small" color="primary">
                             Enter
                         </Button>
