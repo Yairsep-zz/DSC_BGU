@@ -8,6 +8,8 @@ import Button from "@material-ui/core/Button";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import CardActions from "@material-ui/core/CardActions";
 import {Link} from "react-router-dom";
+import {Avatar} from "@material-ui/core";
+import "./css/Technology.scss"
 
 const useStyles = makeStyles({
     root: {
@@ -18,6 +20,12 @@ const useStyles = makeStyles({
         position: "relative",
 
     },
+    avatar: {
+        display: "flex",
+        width: "200px",
+        height: "200px",
+        border: "darkgray solid 3px"
+    }
 });
 
 
@@ -37,119 +45,57 @@ function Technologies() {
     }
 
     return (
-        <div className="section-title">
+        <div className="header">
             <h2>Technologies</h2>
-            <div className="bar"/>
+            <div className="header"/>
             <p>These are some of the technologies we mainly try to focus at DSC BGU</p>
-            <div style={{  display: "flex" , justifyContent: "center"}}>
-            <Card className={classes.root}>
-                <CardActionArea>
-                    <CardMedia
-                        className={classes.media}
-                        component="img"
-                        alt="Web Development"
-                        height="140"
-                        image="pictures/technologies/webdev.jpg"
-                        title="Web Development"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="h2">
-                            Web Development
-                        </Typography>
-                        <Typography variant="body2" color="textSecondary" component="p">
-                            All of our content regarding Web Development
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
-                <CardActions>
-                    <Link to='/WebDev'>
-                        <Button size="small" color="primary">
-                            Enter
-                        </Button>
-                    </Link>
-                </CardActions>
-            </Card>
+            <div style={{display: "flex", justifyContent: "center"}}>
+                <CardMedia className={'AvatarContainer'}>
+                    <Avatar alt={"Web"} src={"pictures/technologies/webdev.jpg"} className={"avatar"}/>
+                    <div>
+                        <Link to='/WebDev' style={{textDecoration: "none"}}>
+                            <Typography variant="h5" component="h2">
+                                Web Development
+                            </Typography>
+                        </Link>
+                    </div>
+                </CardMedia>
 
-            <Card className={classes.root}>
-                <CardActionArea>
-                    <CardMedia
-                        component="img"
-                        alt="Mobile Development"
-                        height="140"
-                        image="pictures/technologies/Android.png"
-                        title="Mobile Development"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="h2">
-                            Mobile Development
-                        </Typography>
-                        <Typography variant="body2" color="textSecondary" component="p">
-                            All of our content regarding Mobile Development
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
-                <CardActions>
-                    <Link to='/MobileDev'>
-                        <Button size="small" color="primary">
-                            Enter
-                        </Button>
-                    </Link>
-                </CardActions>
-            </Card>
 
-            <Card className={classes.root}>
-                <CardActionArea>
-                    <CardMedia
-                        component="img"
-                        alt="Machine Learning"
-                        height="140"
-                        image="pictures/technologies/ml.jpg"
-                        title="Machine Learning"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="h2">
-                            Machine Learning
-                        </Typography>
-                        <Typography variant="body2" color="textSecondary" component="p">
-                            All of our content regarding Machine Learning
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
-                <CardActions>
-                    <Link to='/ML'>
-                        <Button size="small" color="primary">
-                            Enter
-                        </Button>
-                    </Link>
-                </CardActions>
-            </Card>
+                <CardMedia className={'AvatarContainer'}>
+                    <Avatar alt={"Web"} src={"pictures/technologies/mobiledev.png"} className={"avatar"}/>
+                    <div>
+                        <Link to='/MobileDev'  style={{textDecoration: "none"}}>
+                            <Typography gutterBottom variant="h5" component="h2">
+                                Mobile Development
+                            </Typography>
+                        </Link>
+                    </div>
+                </CardMedia>
 
-            <Card className={classes.root}>
-                <CardActionArea>
-                    <CardMedia
-                        component="img"
-                        alt="Python Development"
-                        height="140"
-                        image="pictures/technologies/python-logo.png"
-                        title="Python Development"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="h2">
-                            Python Development
-                        </Typography>
-                        <Typography variant="body2" color="textSecondary" component="p">
-                            All of our content regarding Python Development
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
-                <CardActions>
-                    <Link to='/PythonDev'>
-                        <Button size="small" color="primary">
-                            Enter
-                        </Button>
-                    </Link>
-                </CardActions>
-            </Card>
+
+                <CardMedia className={'AvatarContainer'}>
+                    <Avatar alt={"Web"} src={"pictures/technologies/ml.jpg"} className={"avatar"}/>
+                    <div>
+                        <Link to='/ML'  style={{textDecoration: "none"}}>
+                            <Typography gutterBottom variant="h5" component="h2">
+                                Machine Learning
+                            </Typography>
+                        </Link>
+                    </div>
+                </CardMedia>
+
+                <CardMedia className={'AvatarContainer'}>
+                    <Avatar alt={"Web"} src={"pictures/technologies/python-logo.png"} className={"avatar"}/>
+                    <div>
+                        <Link to='/PythonDev'  style={{textDecoration: "none"}}>
+                            <Typography gutterBottom variant="h5" component="h2">
+                                Python Development
+                            </Typography>
+                        </Link>
+                    </div>
+                </CardMedia>
+
             </div>
         </div>
     );

@@ -28,8 +28,8 @@ function NavigationBar() {
                         Home
                     </MenuItem>
 
-                    <MenuItem variant="h6" className={classes.title} component={Link} to="/Partners">
-                        Partners
+                    <MenuItem variant="h6" className={classes.title} component={Link} to="/Collab">
+                        Collab
                     </MenuItem>
 
                     <MenuItem variant="h6" className={classes.title} component={Link} to="/Members">

@@ -1,0 +1,17 @@
+.header{
+  font-family: Roboto;
+}
+.AvatarContainer{
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  .avatar{
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    width: 400px;
+    height: 350px;
+    border: darkgray solid 3px;
+  }
+}
+
