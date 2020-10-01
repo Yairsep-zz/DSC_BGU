@@ -22,13 +22,13 @@ function Application() {
     const [email, setEmail] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
     const [major, setMajor] = useState("");
-    const [techSkills, setTechSkills] = useState("");
+    const [skillList, setSkillList] = useState([]);
     const [voluntary, setVoluntary] = useState("");
     const [whyJoin, setWhyJoin] = useState("");
     const [shareWithUs, setShareWithUs] = useState("");
     const [displayOther, setDisplayOther] = useState(false);
     const [resume , setResume] = useState(null);
-
+    const [dayList, setDayList] = React.useState([]);
     const programingLanguages = ["Java", "Python", "C++"];
     const webDev = ["React", "Vue", "Angular", "Node.js"];
     const mobileDev = ["React Native", "Flutter", "Kotlin"];
@@ -37,16 +37,43 @@ function Application() {
     const skills = ["Machine Learning", "Cyber Security"];
     const availableDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"];
 
+
+    const handleTechToggle = (skill) => () => {
+        const currentIndex = skillList.indexOf(skill);
+        const newSkillList = [...skillList];
+
+        if (currentIndex === -1) {
+            newSkillList.push(skill);
+        } else {
+            newSkillList.splice(currentIndex, 1);
+        }
+        setSkillList(newSkillList);
+    };
+
+    const handleDaysToggle = (day) => () => {
+        const currentIndex = dayList.indexOf(day);
+        const newDayList = [...dayList];
+
+        if (currentIndex === -1) {
+            newDayList.push(day);
+        } else {
+            newDayList.splice(currentIndex, 1);
+        }
+
+        setDayList(newDayList);
+    };
+
     const Submit = () => {
         applications_Collection.add({
             Name: fullName,
             Email: email,
             PhoneNumber: phoneNumber,
             Major: major,
-            Skills: techSkills,
+            Skills: skillList,
             Voluntary: voluntary,
             WhyJoin: whyJoin,
-            ShareWithUs: shareWithUs
+            ShareWithUs: shareWithUs,
+            DaysAvailable: dayList,
         })
         const storageRef = firebase.storage().ref("Resumes/");
         const fileRef = storageRef.child(fullName + " CV");
@@ -67,7 +94,6 @@ function Application() {
     return (
         <div>
             <h1>Club Member Application</h1>
-            <form>
                 <FormControl>
                     <InputLabel>Full Name</InputLabel>
                     <Input id="FullName" placeholder="Enter your full name"
@@ -114,93 +140,105 @@ function Application() {
                         {console.log("major:" + major)}
                     </FormControl>
                 </div>
-                <FormControl controlId="formGridPhoneNumber">
+                <FormControl>
                     {displayOther &&
                     <FormControl placeholder="Write Your Major" onChange={event => setMajor(event.target.value)}/>}
                 </FormControl>
 
                 <br/><br/><br/><br/>
                 <InputLabel>Technical Skills (Optional)</InputLabel>
-                <FormControl component="fieldset">
-                    <FormLabel component="legend">Programing Languages</FormLabel>
+                <FormControl>
+                    <FormLabel>Programing Languages</FormLabel>
                     <FormGroup>
                         {programingLanguages.map((skill) => (
                             <FormControlLabel
                                 control={<Checkbox name={skill}/>}
                                 label={skill}
+                                onClick={handleTechToggle(skill)}
                             />
                         ))}
-                        {console.log()}
                     </FormGroup>
                 </FormControl>
-                <FormControl component="fieldset">
-                    <FormLabel component="legend">Web Development</FormLabel>
+                <FormControl>
+                    <FormLabel>Web Development</FormLabel>
                     <FormGroup>
                         {webDev.map((skill) => (
                             <FormControlLabel
                                 control={<Checkbox name={skill}/>}
                                 label={skill}
+                                onClick={handleTechToggle(skill)}
                             />
                         ))}
                     </FormGroup>
                 </FormControl>
-                <FormControl component="fieldset">
-                    <FormLabel component="legend">Mobile Development</FormLabel>
+                <FormControl>
+                    <FormLabel>Mobile Development</FormLabel>
                     <FormGroup>
                         {mobileDev.map((skill) => (
                             <FormControlLabel
                                 control={<Checkbox name={skill}/>}
                                 label={skill}
+                                onClick={handleTechToggle(skill)}
                             />
                         ))}
                     </FormGroup>
                 </FormControl>
-                <FormControl component="fieldset">
-                    <FormLabel component="legend">Version Control</FormLabel>
+                <FormControl>
+                    <FormLabel>Version Control</FormLabel>
                     <FormGroup>
                         {versionControl.map((skill) => (
                             <FormControlLabel
                                 control={<Checkbox name={skill}/>}
                                 label={skill}
+                                onClick={handleTechToggle(skill)}
                             />
                         ))}
                     </FormGroup>
                 </FormControl>
-                <FormControl component="fieldset">
-                    <FormLabel component="legend">Google Techs</FormLabel>
+                <FormControl>
+                    <FormLabel>Google Techs</FormLabel>
                     <FormGroup>
                         {googleTech.map((skill) => (
                             <FormControlLabel
                                 control={<Checkbox name={skill}/>}
                                 label={skill}
+                                onClick={handleTechToggle(skill)}
                             />
                         ))}
                     </FormGroup>
                 </FormControl>
 
-                <FormControl component="fieldset">
-                    <FormLabel component="legend">Other</FormLabel>
+                <FormControl>
+                    <FormLabel>Other</FormLabel>
+                    <div>
                     <FormGroup>
                         {skills.map((skill) => (
                             <FormControlLabel
                                 control={<Checkbox name={skill}/>}
                                 label={skill}
+                                onClick={handleTechToggle(skill)}
                             />
                         ))}
+                        {console.log("Tech Skills:" + skillList)}
                     </FormGroup>
+                    </div>
+
                 </FormControl>
+
                 <div>
                     <FormControl>
                         <FormLabel>What are your available days?</FormLabel>
                         <FormGroup row>
                             {availableDays.map((day) => (
                                 <FormControlLabel
-                                    control={<Checkbox name={day}/>}
+                                    control={<Checkbox name={day} onClick={handleDaysToggle(day)}/>}
                                     label={day + " After 18:00"}
                                 />
                             ))}
+                            {console.log("Available Days:" + dayList)}
                         </FormGroup>
                     </FormControl>
+
                 </div>
 
                 <div>
@@ -235,12 +273,8 @@ function Application() {
                 <Button variant="outlined" size="large" color="primary" onClick={Submit}>
                     Submit
                 </Button>
-
-            </form>
-
         </div>
     );
 }
 
 export default Application;
-

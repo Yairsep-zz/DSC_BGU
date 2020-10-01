@@ -21,7 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6357ff79-d7ba-41a3-a5e1-79182789428f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Technologies.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Technologies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/NavigationBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/NavigationBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/Application.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/Application.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +87,7 @@
       <workItem from="1601276630919" duration="985000" />
       <workItem from="1601277641115" duration="12616000" />
       <workItem from="1601358470430" duration="13138000" />
-      <workItem from="1601474948740" duration="291000" />
+      <workItem from="1601474948740" duration="8945000" />
     </task>
     <task id="LOCAL‎00001" summary="Firebase Configuration">
       <created>1600704325323</created>
@@ -254,7 +257,13 @@
       <option name="presentableId" value="LOCAL‎00028" />
       <updated>1601474790074</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL‎00029" summary="Application construction">
+      <created>1601475263567</created>
+      <option name="number" value="LOCAL‎00029" />
+      <option name="presentableId" value="LOCAL‎00029" />
+      <updated>1601475263567</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,11 +307,11 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2619" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601281241181" />
-    <state x="264" y="0" key="CommitChangelistDialog2" timestamp="1601474789557">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="2316" y="0" key="CommitChangelistDialog2" timestamp="1601475262962">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="264" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1601474789557" />
-    <state x="2316" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601389645592" />
+    <state x="2316" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601475262962" />
     <state x="264" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1601298660270" />
     <state x="2103" y="76" width="1024" height="572" key="DiffContextDialog" timestamp="1601108578146">
       <screen x="1920" y="0" width="1920" height="1040" />
@@ -337,11 +346,11 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601045621837" />
-    <state x="368" y="147" key="Vcs.Push.Dialog.v2" timestamp="1601474791498">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601475264955">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1601474791498" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601389647733" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601475264955" />
     <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601109810105">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
