@@ -20,14 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6357ff79-d7ba-41a3-a5e1-79182789428f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/css/Technology.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/data/TechnologiesList.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/pictures/technologies/python-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/pictures/technologies/python-logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/NavigationBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/NavigationBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Technologies.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Technologies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Members/CoreTeam/CoreTeam.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Members/CoreTeam/CoreTeam.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Members/CoreTeam/MemberCard/MemberCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Members/CoreTeam/MemberCard/MemberCard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/css/Technology.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/css/Technology.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +33,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -103,7 +99,7 @@
       <workItem from="1601276630919" duration="985000" />
       <workItem from="1601277641115" duration="12616000" />
       <workItem from="1601358470430" duration="13138000" />
-      <workItem from="1601474948740" duration="16354000" />
+      <workItem from="1601474948740" duration="20371000" />
     </task>
     <task id="LOCAL‎00001" summary="Firebase Configuration">
       <created>1600704325323</created>
@@ -285,7 +281,13 @@
       <option name="presentableId" value="LOCAL‎00030" />
       <updated>1601559123308</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL‎00031" summary="Application construction">
+      <created>1601568039490</created>
+      <option name="number" value="LOCAL‎00031" />
+      <option name="presentableId" value="LOCAL‎00031" />
+      <updated>1601568039490</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,14 +327,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="Application construction" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601647673846">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1601647673846" />
     <state x="2619" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601281241181">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2619" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601281241181" />
-    <state x="264" y="0" key="CommitChangelistDialog2" timestamp="1601559122733">
+    <state x="264" y="0" key="CommitChangelistDialog2" timestamp="1601568038938">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="264" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1601559122733" />
+    <state x="264" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1601568038938" />
     <state x="2316" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601475262962" />
     <state x="264" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1601298660270" />
     <state x="2338" y="120" width="1024" height="572" key="DiffContextDialog" timestamp="1601559079951">
@@ -368,10 +374,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601045621837" />
-    <state x="368" y="147" key="Vcs.Push.Dialog.v2" timestamp="1601559124566">
+    <state x="368" y="147" key="Vcs.Push.Dialog.v2" timestamp="1601568041339">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1601559124566" />
+    <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1601568041339" />
     <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601475264955" />
     <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601109810105">
       <screen x="1920" y="0" width="1920" height="1040" />
@@ -398,11 +404,6 @@
           <url>file://$PROJECT_DIR$/client/src/pages/Apply/Apply.js</url>
           <line>1</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/client/src/components/Technologies.js</url>
-          <line>7</line>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

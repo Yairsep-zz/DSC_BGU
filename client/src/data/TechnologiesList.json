@@ -1,0 +1,22 @@
+[
+  {
+    "Name":"Web Development",
+    "ImageUrl":"pictures/technologies/webdev.jpg",
+    "Link": "/WebDev"
+  },
+  {
+    "Name":"Mobile Development",
+    "ImageUrl":"pictures/technologies/mobiledev.png",
+    "Link": "/MobileDev"
+  },
+  {
+    "Name":"Python Development",
+    "ImageUrl":"pictures/technologies/python-logo.png",
+    "Link": "/PythonDev"
+  },
+  {
+    "Name":"Machine Learning",
+    "ImageUrl":"pictures/technologies/ml.jpg",
+    "Link": "/ML"
+  }
+  ]
