@@ -1,6 +1,6 @@
 import React, {Suspense} from 'react';
 import './App.css';
-import NavigationBar from "./components/NavigationBar";
+import NavigationBar from "./components/NavigationBar/NavigationBar";
 import {FirebaseAppProvider} from "reactfire";
 import {firebaseConfig} from "./firebaseConfig";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
@@ -25,47 +25,49 @@ function App() {
             <div className="App">
                     <Router>
                         <NavigationBar/>
-                        <Suspense fallback={<div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100vh'}}><CircularProgress/></div>}>
-                        <Switch>
-                            <Route exact={true} path="/" component={Home} />
-                            <Route path="/Home">
-                                <Home/>
-                            </Route>
-                            <Route path="/Collab">
-                                <Partners/>
-                            </Route>
-                            <Route path="/Members">
-                                <Members/>
-                            </Route>
-                            <Route path="/Events">
-                                <Events/>
-                            </Route>
-                            <Route path="/Projects">
-                                <Projects/>
-                            </Route>
-                            <Route path="/Apply">
-                                <Apply/>
-                            </Route>
-                            <Route path="/Contact">
-                                <Contact/>
-                            </Route>
-                            <Route path="/Content">
-                                <Content/>
-                            </Route>
-                            <Route path="/WebDev">
-                                <WebDev/>
-                            </Route>
-                            <Route path="/MobileDev">
-                                <MobileDev/>
-                            </Route>
-                            <Route path="/PythonDev">
-                                <PythonDev/>
-                            </Route>
-                            <Route path="/ML">
-                                <MLpage/>
-                            </Route>
-                        </Switch>
-                        </Suspense>
+                        <div id={'content'}>
+                            <Suspense fallback={<div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100vh'}}><CircularProgress/></div>}>
+                            <Switch>
+                                <Route exact={true} path="/" component={Home} />
+                                <Route path="/Home">
+                                    <Home/>
+                                </Route>
+                                <Route path="/Collab">
+                                    <Partners/>
+                                </Route>
+                                <Route path="/Members">
+                                    <Members/>
+                                </Route>
+                                <Route path="/Events">
+                                    <Events/>
+                                </Route>
+                                <Route path="/Projects">
+                                    <Projects/>
+                                </Route>
+                                <Route path="/Apply">
+                                    <Apply/>
+                                </Route>
+                                <Route path="/Contact">
+                                    <Contact/>
+                                </Route>
+                                <Route path="/Content">
+                                    <Content/>
+                                </Route>
+                                <Route path="/WebDev">
+                                    <WebDev/>
+                                </Route>
+                                <Route path="/MobileDev">
+                                    <MobileDev/>
+                                </Route>
+                                <Route path="/PythonDev">
+                                    <PythonDev/>
+                                </Route>
+                                <Route path="/ML">
+                                    <MLpage/>
+                                </Route>
+                            </Switch>
+                            </Suspense>
+                        </div>
                     </Router>
             </div>
         </FirebaseAppProvider>
