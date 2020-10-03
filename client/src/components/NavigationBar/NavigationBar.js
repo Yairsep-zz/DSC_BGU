@@ -8,12 +8,12 @@ import MoreVertIcon from '@material-ui/icons/MoreVert';
 
 const routes = [
     {
-        title:'Collab',
-        href:'/collab'
-    },
-    {
         title:'Members',
         href:'/Members'
+    },
+    {
+        title:'Collabs',
+        href:'/Collabs'
     },
     {
         title:'Events',

@@ -5,7 +5,7 @@ import Typography from "@material-ui/core/Typography";
 import MemberCard from "./MemberCard/MemberCard";
 function CoreTeam() {
 
-    const collection = useFirestore().collection("CoreTeam");
+    const collection = useFirestore().collection("CoreTeam").orderBy("id" , "asc")
     const coreTeam = useFirestoreCollectionData(collection , {idField: "id" }); //TODO: Change Const Name
 
     return (
@@ -14,7 +14,7 @@ function CoreTeam() {
                 Core Team
             </Typography>
             <div className={'teamCards'}>
-                {coreTeam.map((member) => <MemberCard member={member} key={member.id}/>)}
+                {coreTeam.map((member , id) => <MemberCard member={member} key={member.id}/>)}
             </div>
         </div>
     );
