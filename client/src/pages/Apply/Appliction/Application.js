@@ -13,6 +13,10 @@ import Checkbox from "@material-ui/core/Checkbox";
 import FormGroup from "@material-ui/core/FormGroup";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
+//import Creatable, { makeCreatableSelect } from 'react-select/creatable';
+import Creatable, { makeCreatableSelect } from 'react-select/creatable';
+import CreatableSelect from 'react-select/creatable';
+import history from '../../../history';
 
 function Application() {
 
@@ -22,6 +26,7 @@ function Application() {
     const [email, setEmail] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
     const [major, setMajor] = useState("");
+    const [otherMajor, setOtherMajor] = useState("");
     const [skillList, setSkillList] = useState([]);
     const [voluntary, setVoluntary] = useState("");
     const [whyJoin, setWhyJoin] = useState("");
@@ -36,6 +41,9 @@ function Application() {
     const versionControl = ["Git"]
     const skills = ["Machine Learning", "Cyber Security"];
     const availableDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"];
+
+
+   
 
 
     const handleTechToggle = (skill) => () => {
@@ -63,24 +71,34 @@ function Application() {
         setDayList(newDayList);
     };
 
-    const Submit = () => {
-        applications_Collection.add({
+    const Submit = async () => {
+        try {
+        const storageRef = firebase.storage().ref("Resumes/");
+        const fileRef = storageRef.child(fullName + " CV");
+        await fileRef.put(resume).then(() => {
+            console.log("Uploaded a file")
+        })
+        // TODO : fix cv, information in : https://firebase.google.com/docs/storage/web/create-reference
+        await applications_Collection.add({
             Name: fullName,
             Email: email,
             PhoneNumber: phoneNumber,
-            Major: major,
+            Major: otherMajor == ""? major : otherMajor,
             Skills: skillList,
             Voluntary: voluntary,
             WhyJoin: whyJoin,
             ShareWithUs: shareWithUs,
             DaysAvailable: dayList,
+            cv: fileRef.fullPath,
         })
-        const storageRef = firebase.storage().ref("Resumes/");
-        const fileRef = storageRef.child(fullName + " CV");
-        fileRef.put(resume).then(() => {
-            console.log("Uploaded a file")
-        })
+
+        history.push('Apply/Success');
+        //history.push('/Success');
         console.log("Submit clicked")
+     } catch (e) {  
+        history.push('Apply/Failed');
+
+        }
     }
 
     const handleResume = (e) => {
@@ -101,6 +119,7 @@ function Application() {
                     {console.log("Full Name:" + fullName)}
                 </FormControl>
                 <br/>
+
 
                 <FormControl>
                     <InputLabel htmlFor="my-input">Email address</InputLabel>
@@ -128,18 +147,35 @@ function Application() {
 
                     {/*TODO:FIX MAJOR*/}
                     <FormControl>
+
                         <FormLabel>Choose your major</FormLabel>
                         <Select onChange={event => setMajor(event.target.value)}>
-                            <MenuItem>Computer Science</MenuItem>
-                            <MenuItem>Software Engineering</MenuItem>
-                            <MenuItem>Industrial Engineering and Management</MenuItem>
-                            <MenuItem>Software and Information Systems Engineering</MenuItem>
-                            <MenuItem>Management Information Systems Engineering</MenuItem>
-                            <MenuItem onClick={showOther}>Other</MenuItem>
+                        <MenuItem value="Computer Science">Computer Science</MenuItem>
+                            <MenuItem value="Software Engineering">Software Engineering</MenuItem>
+                            <MenuItem value="Industrial Engineering and Management">Industrial Engineering and Management</MenuItem>
+                            <MenuItem value="Software and Information Systems Engineering">Software and Information Systems Engineering</MenuItem>
+                            <MenuItem value="Management Information Systems Engineering">Management Information Systems Engineering</MenuItem>
+                            <MenuItem value="Other">Other</MenuItem>
+                            
                         </Select>
                         {console.log("major:" + major)}
+
                     </FormControl>
                 </div>
+
+                {
+                     major=='Other'?
+                     <div>
+                        <FormControl>
+                        <InputLabel>Major</InputLabel>
+                        <Input id="OtherMajor" placeholder="Enter your Major"
+                           onChange={event => setOtherMajor(event.target.value)}/>
+                        </FormControl>
+                        {console.log("Othermajor:" + otherMajor)}
+                        </div>
+                    :
+                        <div/>
+                }
                 <FormControl>
                     {displayOther &&
                     <FormControl placeholder="Write Your Major" onChange={event => setMajor(event.target.value)}/>}

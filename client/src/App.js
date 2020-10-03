@@ -9,6 +9,8 @@ import Partners from "./pages/Partners/Partners";
 import Events from "./pages/Events/Events";
 import Projects from "./pages/Projects/Projects";
 import Apply from "./pages/Apply/Apply";
+import AfterSubmit from "./pages/Apply/Appliction/AfterSubmit";
+import ApplicaitonFailed from "./pages/Apply/Appliction/ApplicaitonFailed"
 import Contact from "./pages/Contact/Contact";
 import Members from "./pages/Members/Members";
 import CircularProgress from '@material-ui/core/CircularProgress';
@@ -28,42 +30,42 @@ function App() {
                         <Suspense fallback={<div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100vh'}}><CircularProgress/></div>}>
                         <Switch>
                             <Route exact={true} path="/" component={Home} />
-                            <Route path="/Home">
+                            <Route exact={true} path="/Home">
                                 <Home/>
                             </Route>
-                            <Route path="/Collab">
+                            <Route exact={true} path="/Collab">
                                 <Partners/>
                             </Route>
-                            <Route path="/Members">
+                            <Route exact={true} path="/Members">
                                 <Members/>
                             </Route>
-                            <Route path="/Events">
+                            <Route exact={true} path="/Events">
                                 <Events/>
                             </Route>
                             <Route path="/Projects">
                                 <Projects/>
                             </Route>
-                            <Route path="/Apply">
+                            <Route exact={true} path="/Apply">
                                 <Apply/>
                             </Route>
-                            <Route path="/Contact">
+                            <Route exact={true}  path="/Contact">
                                 <Contact/>
                             </Route>
-                            <Route path="/Content">
-                                <Content/>
-                            </Route>
-                            <Route path="/WebDev">
+                            <Route  path="/WebDev">
                                 <WebDev/>
                             </Route>
-                            <Route path="/MobileDev">
+                            <Route exact={true} path="/MobileDev">
                                 <MobileDev/>
                             </Route>
-                            <Route path="/PythonDev">
+                            <Route exact={true} path="/PythonDev">
                                 <PythonDev/>
                             </Route>
-                            <Route path="/ML">
+                            <Route exact={true} path="/ML">
                                 <MLpage/>
                             </Route>
+                            
+                            <Route exact={true} path="/Apply/Success" component={AfterSubmit} />
+                            <Route exact={true} path="/Apply/Failed" component={ApplicaitonFailed} />
                         </Switch>
                         </Suspense>
                     </Router>
