@@ -1,4 +1,6 @@
 import React, {useState} from "react";
+import './Contact.scss'
+import ClubSocialIcons from "../../components/ClubSocialIcons";
 import {useFirestore} from "reactfire";
 import GoogleIntegration from "../../components/GoogleIntegration";
 import Footer from "../../components/Footer";
@@ -9,6 +11,7 @@ import FormHelperText from "@material-ui/core/FormHelperText";
 import FormLabel from "@material-ui/core/FormLabel";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
+
 
 function Contact() {
 
@@ -28,47 +31,65 @@ function Contact() {
     }
 
     return (
-        <div>
-            <h1>Contact Us</h1>
-            <GoogleIntegration/>
-            <form>
-                <FormControl>
-                    <InputLabel>Name</InputLabel>
-                    <Input id="FullName" placeholder="Enter your full name"
-                           onChange={event => setName(event.target.value)}/>
-                    {console.log("Name:" + name)}
-                </FormControl>
-                <br/>
+        <div className="container">
+            <div className="row">
+                <div className="col-6 leftSide-col">
+                    <br/>
+                    <h1><b>Contact Us!</b></h1>
+                    <div className="google">
+                        <GoogleIntegration/>
+                    </div>
+                    <form>
+                        <FormControl>
+                            <InputLabel style={{fontSize:15,}}>Name</InputLabel>
+                            <Input id="FullName" placeholder="Enter your full name"
+                                onChange={event => setName(event.target.value)}/>
+                            {console.log("Name:" + name)}
+                        </FormControl>
+                        <br/>
 
-                <FormControl>
-                    <InputLabel htmlFor="my-input">Email address</InputLabel>
-                    <Input id="my-input" aria-describedby="my-helper-text"
-                           onChange={event => setEmail(event.target.value)}/>
-                    <FormHelperText id="my-helper-text">We'll never share your email.</FormHelperText>
-                    {console.log("Email:" + email)}
-                </FormControl>
-                <br/>
+                        <FormControl>
+                            <InputLabel style={{fontSize:15,}} htmlFor="my-input">Email address</InputLabel>
+                            <Input id="my-input" aria-describedby="my-helper-text"
+                                onChange={event => setEmail(event.target.value)}/>
+                            <FormHelperText style={{padding: 15,paddingTop:2,}} id="my-helper-text">We'll never share your email.</FormHelperText>
+                            {console.log("Email:" + email)}
+                        </FormControl>
+                        <br/>
 
-                <FormControl>
-                    <FormLabel>What would you like to tell us?</FormLabel>
-                    <TextField
-                        id="outlined-multiline-static"
-                        label="Write your answer here"
-                        multiline
-                        rows={4}
-                        variant="outlined"
-                        onChange={event => setMessage(event.target.value)}/>
-                    {console.log("Voluntary:" + message)}
-                </FormControl>
-                <div>
-                <Button variant="outlined" size="large" color="primary" onClick={Send}>
-                    Send
-                </Button>
+                    <FormControl>
+                        <FormLabel style={{padding:10,}}>What would you like to tell us?</FormLabel>
+                        <TextField
+                            id="outlined-multiline-static"
+                            label="Write your answer here"
+                            multiline
+                            rows={4}
+                            variant="outlined"
+                            onChange={event => setMessage(event.target.value)}/>
+                        {console.log("Voluntary:" + message)}
+                    </FormControl>
+                    <div>
+                        <br/>
+                        <Button color="primary" variant="outlined" size="large" color="primary" onClick={Send}>
+                            Send
+                        </Button>
+                        <ClubSocialIcons/>
+                    </div>
+                    </form>
                 </div>
-            </form>
+                
+                
+                <div className="col-6 rightSide-col">
+                    <div className ="hidden-md">
+                        <img src='/pictures/content/contact.png' width={"400px"} height={"400px"}/>
+                    </div>
+                </div>
+
+            </div>
+            <br/>
             <Footer/>
         </div>
-    );
+        );
 }
 
 export default Contact;
