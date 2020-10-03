@@ -14,7 +14,7 @@ function NavigationBar() {
             <AppBar position="static">
                 <Toolbar>
                     <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-                        <MenuIcon />
+                        <img src='/pictures/logos/dsc-logo-tablet.png' width={"25px"} height={"25px"} />
                     </IconButton>
 
                     {/*TODO:ADD DSC BGU LOGO*/}
