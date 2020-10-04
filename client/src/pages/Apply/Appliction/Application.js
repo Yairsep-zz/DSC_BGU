@@ -13,15 +13,21 @@ import Checkbox from "@material-ui/core/Checkbox";
 import FormGroup from "@material-ui/core/FormGroup";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
+//import Creatable, { makeCreatableSelect } from 'react-select/creatable';
+import Creatable, { makeCreatableSelect } from 'react-select/creatable';
+import CreatableSelect from 'react-select/creatable';
+import { useHistory } from 'react-router-dom'
+//import history from '../../../history';
 
 function Application() {
 
     const applications_Collection = useFirestore().collection("Applications");
-
+    const history = useHistory()
     const [fullName, setFullName] = useState("");
     const [email, setEmail] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
     const [major, setMajor] = useState("");
+    const [otherMajor, setOtherMajor] = useState("");
     const [skillList, setSkillList] = useState([]);
     const [voluntary, setVoluntary] = useState("");
     const [whyJoin, setWhyJoin] = useState("");
@@ -36,6 +42,9 @@ function Application() {
     const versionControl = ["Git"]
     const skills = ["Machine Learning", "Cyber Security"];
     const availableDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"];
+
+
+   
 
 
     const handleTechToggle = (skill) => () => {
@@ -62,25 +71,78 @@ function Application() {
 
         setDayList(newDayList);
     };
+    let errors = [];
+    
+    const Submit = async () => {
+        errors = [];
+        
+        if (fullName.length < 5 ) {
+            errors.push("Name should be at least 5 charcters long.");
+          }
+        
+          if (email.length < 5) {
+            errors.push("Email should be at least 5 charcters long.");
+          }
+          if (email.split("").filter(x => x === "@").length !== 1) {
+            errors.push("Email should contain a @.");
+          }
+          if (email.indexOf(".") === -1) {
+            errors.push("Email should contain at least one dot.");
+          }
+        
+          if (phoneNumber.length < 9) {
+            errors.push("Phone Number should be at least 9 characters long.");
+          }
+           if (!(/^\d+$/.test(phoneNumber))){
+            errors.push("Phone Number should containt only numbers.");
+           };
 
-    const Submit = () => {
-        applications_Collection.add({
-            Name: fullName,
-            Email: email,
-            PhoneNumber: phoneNumber,
-            Major: major,
-            Skills: skillList,
-            Voluntary: voluntary,
-            WhyJoin: whyJoin,
-            ShareWithUs: shareWithUs,
-            DaysAvailable: dayList,
-        })
-        const storageRef = firebase.storage().ref("Resumes/");
-        const fileRef = storageRef.child(fullName + " CV");
-        fileRef.put(resume).then(() => {
-            console.log("Uploaded a file")
-        })
-        console.log("Submit clicked")
+           if ((major == "Other" && otherMajor.length === 0) || (major.length === 0) ) {
+            errors.push("Majr can't be empty.");
+          }
+
+          if (whyJoin === 0) {
+            errors.push("WhyJoin can't be empty.");
+          }
+
+          if (resume == null) {
+            errors.push("resume is missing.");
+          }
+          
+          console.log("**********************")
+          console.log(errors)
+        if (errors.length === 0)
+        {
+        
+            try {
+            const storageRef = firebase.storage().ref("Resumes/");
+            const fileRef = storageRef.child(fullName + " CV");
+            await fileRef.put(resume).then(() => {
+                console.log("Uploaded a file")
+            })
+            // TODO : fix cv, information in : https://firebase.google.com/docs/storage/web/create-reference
+            await applications_Collection.add({
+                Name: fullName,
+                Email: email,
+                PhoneNumber: phoneNumber,
+                Major: otherMajor == ""? major : otherMajor,
+                Skills: skillList,
+                Voluntary: voluntary,
+                WhyJoin: whyJoin,
+                ShareWithUs: shareWithUs,
+                DaysAvailable: dayList,
+                cv: fileRef.fullPath,
+            })
+
+            history.push('/Apply/Success');
+            console.log("Submit clicked")
+        } catch (e) {  
+            history.push('/Apply/Failed');
+
+            }
+        } else {
+            console.log(errors)
+        }
     }
 
     const handleResume = (e) => {
@@ -95,12 +157,23 @@ function Application() {
         <div>
             <h1>Club Member Application</h1>
                 <FormControl>
+                    {
+                     errors.length > 0 ?
+                     <div>
+                        {errors.map(error => ( <h1>Error:  {error}</h1>))}
+                        </div>
+                    :
+                        <div/>
+                }
+                {console.log("*******************")}
+                {console.log(`error length = ${errors.length}`)}
                     <InputLabel>Full Name</InputLabel>
                     <Input id="FullName" placeholder="Enter your full name"
                            onChange={event => setFullName(event.target.value)}/>
                     {console.log("Full Name:" + fullName)}
                 </FormControl>
                 <br/>
+
 
                 <FormControl>
                     <InputLabel htmlFor="my-input">Email address</InputLabel>
@@ -128,18 +201,35 @@ function Application() {
 
                     {/*TODO:FIX MAJOR*/}
                     <FormControl>
+
                         <FormLabel>Choose your major</FormLabel>
                         <Select onChange={event => setMajor(event.target.value)}>
-                            <MenuItem>Computer Science</MenuItem>
-                            <MenuItem>Software Engineering</MenuItem>
-                            <MenuItem>Industrial Engineering and Management</MenuItem>
-                            <MenuItem>Software and Information Systems Engineering</MenuItem>
-                            <MenuItem>Management Information Systems Engineering</MenuItem>
-                            <MenuItem onClick={showOther}>Other</MenuItem>
+                        <MenuItem value="Computer Science">Computer Science</MenuItem>
+                            <MenuItem value="Software Engineering">Software Engineering</MenuItem>
+                            <MenuItem value="Industrial Engineering and Management">Industrial Engineering and Management</MenuItem>
+                            <MenuItem value="Software and Information Systems Engineering">Software and Information Systems Engineering</MenuItem>
+                            <MenuItem value="Management Information Systems Engineering">Management Information Systems Engineering</MenuItem>
+                            <MenuItem value="Other">Other</MenuItem>
+                            
                         </Select>
                         {console.log("major:" + major)}
+
                     </FormControl>
                 </div>
+
+                {
+                     major=='Other'?
+                     <div>
+                        <FormControl>
+                        <InputLabel>Major</InputLabel>
+                        <Input id="OtherMajor" placeholder="Enter your Major"
+                           onChange={event => setOtherMajor(event.target.value)}/>
+                        </FormControl>
+                        {console.log("Othermajor:" + otherMajor)}
+                        </div>
+                    :
+                        <div/>
+                }
                 <FormControl>
                     {displayOther &&
                     <FormControl placeholder="Write Your Major" onChange={event => setMajor(event.target.value)}/>}
