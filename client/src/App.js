@@ -51,19 +51,19 @@ function App() {
                             <Route exact={true}  path="/Contact">
                                 <Contact/>
                             </Route>
-                            <Route path="/Content">
+                            <Route exact={true} path="/Content">
                                 <Content/>
                             </Route>
-                            <Route  path="/WebDev">
+                            <Route  exact={true} path="/Content/WebDev">
                                 <WebDev/>
                             </Route>
-                            <Route path="/MobileDev">
+                            <Route exact={true}  exact={true} path="/Content/MobileDev">
                                 <MobileDev/>
                             </Route>
-                            <Route path="/PythonDev">
+                            <Route exact={true} path="/Content/PythonDev">
                                 <PythonDev/>
                             </Route>
-                            <Route path="/ML">
+                            <Route exact={true} path="/Content/ML">
                                 <MLpage/>
                             </Route>
 
