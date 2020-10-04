@@ -4,6 +4,7 @@ import Typography from "@material-ui/core/Typography";
 import ProjectCard from "./ProjectCard/ProjectCard";
 import './Projects.scss'
 import Footer from "../../components/Footer";
+import ConstructionPage from "../../components/ConstructionPage";
 
 function Projects() {
 
@@ -16,9 +17,10 @@ function Projects() {
             <Typography variant="h2" gutterBottom className={'header'}>
                 Projects
             </Typography>
-            <div className={'ProjectCards'}>
-                {projects.map((project) => <ProjectCard project={project} key={project.id}/>)}
-            </div>
+            {/*<div className={'ProjectCards'}>*/}
+            {/*    {projects.map((project) => <ProjectCard project={project} key={project.id}/>)}*/}
+            {/*</div>*/}
+            <ConstructionPage/>
             <Footer/>
         </div>
     );

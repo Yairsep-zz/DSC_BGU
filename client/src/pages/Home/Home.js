@@ -25,9 +25,9 @@ function Home() {
             </Button>
             </Link>
                         <ClubSocialIcons/>
-            <div>
-                <Technologies/>
-            </div>
+            {/*<div>*/}
+            {/*    <Technologies/>*/}
+            {/*</div>*/}
             <Footer/>
         </div>
     );

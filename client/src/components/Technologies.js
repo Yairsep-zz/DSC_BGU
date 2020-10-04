@@ -7,6 +7,7 @@ import Grid from '@material-ui/core/Grid';
 import "./css/Technology.scss"
 const TechnologiesList = require('../data/TechnologiesList.json');
 
+
 function Technologies() {
 
     return (

@@ -1,12 +1,11 @@
 import React, {Suspense} from 'react';
 import './App.css';
-// import NavigationBar from "./components/NavigationBar";
 import {FirebaseAppProvider} from "reactfire";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
 import {firebaseConfig} from "./firebaseConfig";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Home from "./pages/Home/Home";
-import Partners from "./pages/Partners/Partners";
+import Collabs from "./pages/Collabs/Collabs";
 import Events from "./pages/Events/Events";
 import Projects from "./pages/Projects/Projects";
 import Apply from "./pages/Apply/Apply";
@@ -34,8 +33,8 @@ function App() {
                             <Route exact={true} path="/Home">
                                 <Home/>
                             </Route>
-                            <Route exact={true} path="/Collab">
-                                <Partners/>
+                            <Route exact={true} path="/Collabs">
+                                <Collabs/>
                             </Route>
                             <Route exact={true} path="/Members">
                                 <Members/>
@@ -52,19 +51,22 @@ function App() {
                             <Route exact={true}  path="/Contact">
                                 <Contact/>
                             </Route>
+                            <Route path="/Content">
+                                <Content/>
+                            </Route>
                             <Route  path="/WebDev">
                                 <WebDev/>
                             </Route>
-                            <Route exact={true} path="/MobileDev">
+                            <Route path="/MobileDev">
                                 <MobileDev/>
                             </Route>
-                            <Route exact={true} path="/PythonDev">
+                            <Route path="/PythonDev">
                                 <PythonDev/>
                             </Route>
-                            <Route exact={true} path="/ML">
+                            <Route path="/ML">
                                 <MLpage/>
                             </Route>
-                            
+
                             <Route exact={true} path="/Apply/Success" component={AfterSubmit} />
                             <Route exact={true} path="/Apply/Failed" component={ApplicaitonFailed} />
                         </Switch>
