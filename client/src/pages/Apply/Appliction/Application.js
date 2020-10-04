@@ -16,12 +16,13 @@ import Button from "@material-ui/core/Button";
 //import Creatable, { makeCreatableSelect } from 'react-select/creatable';
 import Creatable, { makeCreatableSelect } from 'react-select/creatable';
 import CreatableSelect from 'react-select/creatable';
-import history from '../../../history';
+import { useHistory } from 'react-router-dom'
+//import history from '../../../history';
 
 function Application() {
 
     const applications_Collection = useFirestore().collection("Applications");
-
+    const history = useHistory()
     const [fullName, setFullName] = useState("");
     const [email, setEmail] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
@@ -70,34 +71,77 @@ function Application() {
 
         setDayList(newDayList);
     };
-
+    let errors = [];
+    
     const Submit = async () => {
-        try {
-        const storageRef = firebase.storage().ref("Resumes/");
-        const fileRef = storageRef.child(fullName + " CV");
-        await fileRef.put(resume).then(() => {
-            console.log("Uploaded a file")
-        })
-        // TODO : fix cv, information in : https://firebase.google.com/docs/storage/web/create-reference
-        await applications_Collection.add({
-            Name: fullName,
-            Email: email,
-            PhoneNumber: phoneNumber,
-            Major: otherMajor == ""? major : otherMajor,
-            Skills: skillList,
-            Voluntary: voluntary,
-            WhyJoin: whyJoin,
-            ShareWithUs: shareWithUs,
-            DaysAvailable: dayList,
-            cv: fileRef.fullPath,
-        })
+        errors = [];
+        
+        if (fullName.length < 5 ) {
+            errors.push("Name should be at least 5 charcters long.");
+          }
+        
+          if (email.length < 5) {
+            errors.push("Email should be at least 5 charcters long.");
+          }
+          if (email.split("").filter(x => x === "@").length !== 1) {
+            errors.push("Email should contain a @.");
+          }
+          if (email.indexOf(".") === -1) {
+            errors.push("Email should contain at least one dot.");
+          }
+        
+          if (phoneNumber.length < 9) {
+            errors.push("Phone Number should be at least 9 characters long.");
+          }
+           if (!(/^\d+$/.test(phoneNumber))){
+            errors.push("Phone Number should containt only numbers.");
+           };
 
-        history.push('Apply/Success');
-        //history.push('/Success');
-        console.log("Submit clicked")
-     } catch (e) {  
-        history.push('Apply/Failed');
+           if ((major == "Other" && otherMajor.length === 0) || (major.length === 0) ) {
+            errors.push("Majr can't be empty.");
+          }
 
+          if (whyJoin === 0) {
+            errors.push("WhyJoin can't be empty.");
+          }
+
+          if (resume == null) {
+            errors.push("resume is missing.");
+          }
+          
+          console.log("**********************")
+          console.log(errors)
+        if (errors.length === 0)
+        {
+        
+            try {
+            const storageRef = firebase.storage().ref("Resumes/");
+            const fileRef = storageRef.child(fullName + " CV");
+            await fileRef.put(resume).then(() => {
+                console.log("Uploaded a file")
+            })
+            // TODO : fix cv, information in : https://firebase.google.com/docs/storage/web/create-reference
+            await applications_Collection.add({
+                Name: fullName,
+                Email: email,
+                PhoneNumber: phoneNumber,
+                Major: otherMajor == ""? major : otherMajor,
+                Skills: skillList,
+                Voluntary: voluntary,
+                WhyJoin: whyJoin,
+                ShareWithUs: shareWithUs,
+                DaysAvailable: dayList,
+                cv: fileRef.fullPath,
+            })
+
+            history.push('/Apply/Success');
+            console.log("Submit clicked")
+        } catch (e) {  
+            history.push('/Apply/Failed');
+
+            }
+        } else {
+            console.log(errors)
         }
     }
 
@@ -113,6 +157,16 @@ function Application() {
         <div>
             <h1>Club Member Application</h1>
                 <FormControl>
+                    {
+                     errors.length > 0 ?
+                     <div>
+                        {errors.map(error => ( <h1>Error:  {error}</h1>))}
+                        </div>
+                    :
+                        <div/>
+                }
+                {console.log("*******************")}
+                {console.log(`error length = ${errors.length}`)}
                     <InputLabel>Full Name</InputLabel>
                     <Input id="FullName" placeholder="Enter your full name"
                            onChange={event => setFullName(event.target.value)}/>
