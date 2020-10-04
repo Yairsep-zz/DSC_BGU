@@ -1,7 +1,8 @@
 import React, {Suspense} from 'react';
 import './App.css';
-import NavigationBar from "./components/NavigationBar";
+// import NavigationBar from "./components/NavigationBar";
 import {FirebaseAppProvider} from "reactfire";
+import NavigationBar from "./components/NavigationBar/NavigationBar";
 import {firebaseConfig} from "./firebaseConfig";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Home from "./pages/Home/Home";

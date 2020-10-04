@@ -23,13 +23,11 @@ function Technologies() {
                         {TechnologiesList.map((technology) => (
                             <CardMedia className={'AvatarContainer'}>
                                 <Avatar alt={technology.Name} src={technology.ImageUrl} className={"avatar"}/>
-                                <div>
                                     <Link to={technology.Link} style={{textDecoration: "none"}}>
                                         <Typography variant="h5" component="h2">
                                             {technology.Name}
                                         </Typography>
                                     </Link>
-                                </div>
                             </CardMedia>
                         ))}
                     </Grid>
