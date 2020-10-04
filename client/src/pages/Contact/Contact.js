@@ -33,7 +33,8 @@ function Contact() {
     return (
         <div className="container">
             <div className="row">
-                <div className="col-6 leftSide-col">
+                <div className="col-6">
+                <div className="leftSide-col">
                     <br/>
                     <h1><b>Contact Us!</b></h1>
                     <div className="google">
@@ -77,14 +78,14 @@ function Contact() {
                         </div>
                     </form>
                 </div>
-
-
-                <div className="col-6 rightSide-col">
-                    <div className ="hidden-md">
-                        <img src='/pictures/content/contact.png' width={"400px"} height={"400px"}/>
+                </div>
+                <div className="col-6">
+                    <div className="rightSide-col">
+                        <div className ="hidden-md">
+                            <img src='/pictures/content/contact.png' width={"400px"} height={"400px"}/>
+                        </div>
                     </div>
                 </div>
-
             </div>
             <br/>
             <Footer/>

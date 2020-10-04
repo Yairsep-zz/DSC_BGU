@@ -26,21 +26,30 @@ h1{
 }
 
 .col-6{
+    width: 50%;
     margin:0px;
 }
 
+.google{
+    margin-left: 25%;}
+
 div.leftSide-col{
-    margin-left: 20%;
+    margin-left: 30%;
 }
 
-div.rightSide-col{
-    margin-left: 10%;
+div.hidden-md{
+    margin-left: 0%;
 }
 
 @media (max-width: 600px) {
-    .hidden-md {
+    .rightSide-col {
       display: none;
     }
+    .col-6{width: 100%;}
+    div.leftSide-col{
+        margin-left: 20%;
+    }
+    .google{
+        margin-left: auto;
+    }
   }
-
-
