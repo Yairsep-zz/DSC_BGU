@@ -1,5 +1,6 @@
 import React from "react";
 import ConstructionPage from "../../../components/ConstructionPage";
+import Footer from "../../../components/Footer";
 
 function MLpage() {
 
@@ -7,6 +8,7 @@ function MLpage() {
         <div>
             <h1>Machine Learning</h1>
             <ConstructionPage/>
+            <Footer/>
         </div>
     );
 }
