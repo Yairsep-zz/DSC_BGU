@@ -44,7 +44,7 @@ function Contact() {
                         <FormControl>
                             <InputLabel style={{fontSize:15,}}>Name</InputLabel>
                             <Input id="FullName" placeholder="Enter your full name"
-                                onChange={event => setName(event.target.value)}/>
+                                   onChange={event => setName(event.target.value)}/>
                             {console.log("Name:" + name)}
                         </FormControl>
                         <br/>
@@ -52,36 +52,33 @@ function Contact() {
                         <FormControl>
                             <InputLabel style={{fontSize:15,}} htmlFor="my-input">Email address</InputLabel>
                             <Input id="my-input" aria-describedby="my-helper-text"
-                                onChange={event => setEmail(event.target.value)}/>
+                                   onChange={event => setEmail(event.target.value)}/>
                             <FormHelperText style={{padding: 15,paddingTop:2,}} id="my-helper-text">We'll never share your email.</FormHelperText>
                             {console.log("Email:" + email)}
                         </FormControl>
                         <br/>
 
-                    <FormControl>
-                        <FormLabel style={{padding:10,}}>What would you like to tell us?</FormLabel>
-                        <TextField
-                            id="outlined-multiline-static"
-                            label="Write your answer here"
-                            multiline
-                            rows={4}
-                            variant="outlined"
-                            onChange={event => setMessage(event.target.value)}/>
-                        {console.log("Voluntary:" + message)}
-                    </FormControl>
-                    <div>
-                        <br/>
-                        <Button color="primary" variant="outlined" size="large" color="primary" onClick={Send}>
-                            Send
-                        </Button>
-                        <ClubSocialIcons/>
-                    </div>
+                        <FormControl>
+                            <FormLabel style={{padding:10,}}>What would you like to tell us?</FormLabel>
+                            <TextField
+                                id="outlined-multiline-static"
+                                label="Write your answer here"
+                                multiline
+                                rows={4}
+                                variant="outlined"
+                                onChange={event => setMessage(event.target.value)}/>
+                            {console.log("Voluntary:" + message)}
+                        </FormControl>
+                        <div>
+                            <br/>
+                            <Button color="primary" variant="outlined" size="large" color="primary" onClick={Send}>
+                                Send
+                            </Button>
+                            <ClubSocialIcons/>
+                        </div>
                     </form>
                 </div>
                 </div>
-
-                
-                
                 <div className="col-6">
                     <div className="rightSide-col">
                         <div className ="hidden-md">
@@ -89,12 +86,11 @@ function Contact() {
                         </div>
                     </div>
                 </div>
-
             </div>
             <br/>
             <Footer/>
         </div>
-        );
+    );
 }
 
 export default Contact;

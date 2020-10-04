@@ -1,15 +1,16 @@
 import React, {Suspense} from 'react';
 import './App.css';
-// import NavigationBar from "./components/NavigationBar";
 import {FirebaseAppProvider} from "reactfire";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
 import {firebaseConfig} from "./firebaseConfig";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Home from "./pages/Home/Home";
-import Partners from "./pages/Partners/Partners";
+import Collabs from "./pages/Collabs/Collabs";
 import Events from "./pages/Events/Events";
 import Projects from "./pages/Projects/Projects";
 import Apply from "./pages/Apply/Apply";
+import AfterSubmit from "./pages/Apply/Appliction/AfterSubmit";
+import ApplicaitonFailed from "./pages/Apply/Appliction/ApplicaitonFailed"
 import Contact from "./pages/Contact/Contact";
 import Members from "./pages/Members/Members";
 import CircularProgress from '@material-ui/core/CircularProgress';
@@ -29,42 +30,45 @@ function App() {
                         <Suspense fallback={<div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100vh'}}><CircularProgress/></div>}>
                         <Switch>
                             <Route exact={true} path="/" component={Home} />
-                            <Route path="/Home">
+                            <Route exact={true} path="/Home">
                                 <Home/>
                             </Route>
-                            <Route path="/Members">
+                            <Route exact={true} path="/Collabs">
+                                <Collabs/>
+                            </Route>
+                            <Route exact={true} path="/Members">
                                 <Members/>
                             </Route>
-                            <Route path="/Collabs">
-                                <Partners/>
-                            </Route>
-                            <Route path="/Events">
+                            <Route exact={true} path="/Events">
                                 <Events/>
                             </Route>
                             <Route path="/Projects">
                                 <Projects/>
                             </Route>
-                            <Route path="/Apply">
+                            <Route exact={true} path="/Apply">
                                 <Apply/>
                             </Route>
-                            <Route path="/Contact">
+                            <Route exact={true}  path="/Contact">
                                 <Contact/>
                             </Route>
-                            <Route path="/Content">
+                            <Route exact={true} path="/Content">
                                 <Content/>
                             </Route>
-                            <Route path="/WebDev">
+                            <Route  exact={true} path="/Content/WebDev">
                                 <WebDev/>
                             </Route>
-                            <Route path="/MobileDev">
+                            <Route exact={true}  exact={true} path="/Content/MobileDev">
                                 <MobileDev/>
                             </Route>
-                            <Route path="/PythonDev">
+                            <Route exact={true} path="/Content/PythonDev">
                                 <PythonDev/>
                             </Route>
-                            <Route path="/ML">
+                            <Route exact={true} path="/Content/ML">
                                 <MLpage/>
                             </Route>
+
+                            <Route exact={true} path="/Apply/Success" component={AfterSubmit} />
+                            <Route exact={true} path="/Apply/Failed" component={ApplicaitonFailed} />
                         </Switch>
                         </Suspense>
                     </Router>

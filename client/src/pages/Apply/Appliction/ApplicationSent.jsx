@@ -4,7 +4,9 @@ function ApplicationSent() {
 
     return (
         <div>
-            <h1>Application Sent Successfully</h1>
+             <h1>Thank you for submitting.</h1>
+            <br/>
+            <h2>Good Lack!</h2>
         </div>
     );
 }
