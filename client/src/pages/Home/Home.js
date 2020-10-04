@@ -16,7 +16,7 @@ function Home() {
             <div className="row">
                 <div className="col-6">
                     <div className="leftSide-col">
-                        <p style={{fontSize: 20,marginTop:15,textAlign:"justify",}}> 
+                        <p style={{fontSize: 20,marginTop:14,textAlign:"justify",}}> 
                             Developer Student Clubs are university based community
                             groups for students interested in Google developer
                             technologies. Students from all undergraduate or
