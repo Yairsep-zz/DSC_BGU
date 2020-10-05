@@ -26,11 +26,22 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6357ff79-d7ba-41a3-a5e1-79182789428f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Content/ML/MLpage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Content/ML/MLpage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Content/MobileDev/MobileDev.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Content/MobileDev/MobileDev.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Content/PythonDev/PythonDev.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Content/PythonDev/PythonDev.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Content/WebDev/WebDev.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Content/WebDev/WebDev.jsx" afterDir="false" />
+    <list default="true" id="6357ff79-d7ba-41a3-a5e1-79182789428f" name="Default Changelist" comment="Mergin (Collabs &amp; Apply) 4/10">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Technologies.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Technologies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/css/Technology.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/css/Technology.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/firebaseConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/utils/firebaseConfig.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/history.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/utils/history.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/Application.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/Application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Apply/Apply.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Apply/Apply.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Contact/Contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Contact/Contact.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/Home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Home/Home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Members/CoreTeam/MemberCard/MemberCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Members/CoreTeam/MemberCard/MemberCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Members/CoreTeam/MemberCard/MemberCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Members/CoreTeam/MemberCard/MemberCard.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +51,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -67,27 +78,12 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\yairs\IdeaProjects\DSC_BGU\client\src\utils" />
+      <recent name="C:\Users\yairs\IdeaProjects\DSC_BGU\client\src\components" />
+      <recent name="C:\Users\yairs\IdeaProjects\DSC_BGU\client\src\components\Footer" />
       <recent name="C:\Users\yairs\IdeaProjects\DSC_BGU\client\src\pages\Collabs\CollabsCard" />
       <recent name="C:\Users\yairs\IdeaProjects\DSC_BGU\client\src\pages\Collabs" />
-      <recent name="C:\Users\yairs\IdeaProjects\DSC_BGU\client\src\pages\Apply\Appliction" />
-      <recent name="C:\Users\yairs\IdeaProjects\DSC_BGU\client\public\pictures" />
-      <recent name="C:\Users\yairs\IdeaProjects\DSC_BGU\client\src\data\pictures" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -109,7 +105,9 @@
       <workItem from="1601277641115" duration="12616000" />
       <workItem from="1601358470430" duration="13138000" />
       <workItem from="1601474948740" duration="25281000" />
-      <workItem from="1601758915320" duration="12486000" />
+      <workItem from="1601758915320" duration="14257000" />
+      <workItem from="1601824962750" duration="1361000" />
+      <workItem from="1601827125092" duration="2179000" />
     </task>
     <task id="LOCAL‎00001" summary="Firebase Configuration">
       <created>1600704325323</created>
@@ -315,7 +313,13 @@
       <option name="presentableId" value="LOCAL‎00034" />
       <updated>1601822890849</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL‎00035" summary="Mergin (Collabs &amp; Apply) 4/10">
+      <created>1601823452337</created>
+      <option name="number" value="LOCAL‎00035" />
+      <option name="presentableId" value="LOCAL‎00035" />
+      <updated>1601823452337</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,17 +383,17 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2619" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601281241181" />
-    <state x="2316" y="0" key="CommitChangelistDialog2" timestamp="1601822890084">
+    <state x="2316" y="0" key="CommitChangelistDialog2" timestamp="1601825109925">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="264" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1601568038938" />
-    <state x="2316" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601822890084" />
+    <state x="2316" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601825109925" />
     <state x="264" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1601648060663" />
-    <state x="2103" y="76" width="1595" height="572" key="DiffContextDialog" timestamp="1601816566172">
+    <state x="2208" y="-26" width="1595" height="572" maximized="true" key="DiffContextDialog" timestamp="1601827113246">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2338" y="120" key="DiffContextDialog/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1601559079951" />
-    <state x="2103" y="76" width="1595" height="572" key="DiffContextDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601816566172" />
+    <state x="2208" y="-26" width="1595" height="572" maximized="true" key="DiffContextDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601827113246" />
     <state x="465" y="261" key="Github.CreateGistDialog" timestamp="1600698989897">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -422,16 +426,16 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2360" y="210" width="1461" height="830" key="MergeDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601757989503" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601822892765">
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601823454074">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1601568041339" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601822892765" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601823454074" />
     <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1601648442417" />
-    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601821282521">
+    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601826960452">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601821282521" />
+    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601826960452" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1601284276348">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -451,7 +455,6 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/pages/Apply/Apply.js</url>
-          <line>1</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

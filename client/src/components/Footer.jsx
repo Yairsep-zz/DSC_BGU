@@ -15,7 +15,8 @@ function Footer() {
                                 style={{
                                     display: 'flex',
                                     alignItems: 'center',
-                                    justifyContent: 'center'
+                                    justifyContent: 'center',
+                                    paddingBottom: 0
                                 }}
                             >
                                 <img src='/pictures/logos/dscLogo.png' width={"100px"} height={"100px"} />

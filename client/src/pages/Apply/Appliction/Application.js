@@ -13,11 +13,7 @@ import Checkbox from "@material-ui/core/Checkbox";
 import FormGroup from "@material-ui/core/FormGroup";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
-//import Creatable, { makeCreatableSelect } from 'react-select/creatable';
-import Creatable, { makeCreatableSelect } from 'react-select/creatable';
-import CreatableSelect from 'react-select/creatable';
 import { useHistory } from 'react-router-dom'
-//import history from '../../../history';
 
 function Application() {
 
@@ -42,10 +38,6 @@ function Application() {
     const versionControl = ["Git"]
     const skills = ["Machine Learning", "Cyber Security"];
     const availableDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"];
-
-
-   
-
 
     const handleTechToggle = (skill) => () => {
         const currentIndex = skillList.indexOf(skill);
@@ -72,14 +64,14 @@ function Application() {
         setDayList(newDayList);
     };
     let errors = [];
-    
+
     const Submit = async () => {
         errors = [];
-        
+
         if (fullName.length < 5 ) {
             errors.push("Name should be at least 5 charcters long.");
           }
-        
+
           if (email.length < 5) {
             errors.push("Email should be at least 5 charcters long.");
           }
@@ -89,7 +81,7 @@ function Application() {
           if (email.indexOf(".") === -1) {
             errors.push("Email should contain at least one dot.");
           }
-        
+
           if (phoneNumber.length < 9) {
             errors.push("Phone Number should be at least 9 characters long.");
           }
@@ -108,12 +100,12 @@ function Application() {
           if (resume == null) {
             errors.push("resume is missing.");
           }
-          
+
           console.log("**********************")
           console.log(errors)
         if (errors.length === 0)
         {
-        
+
             try {
             const storageRef = firebase.storage().ref("Resumes/");
             const fileRef = storageRef.child(fullName + " CV");
@@ -136,7 +128,7 @@ function Application() {
 
             history.push('/Apply/Success');
             console.log("Submit clicked")
-        } catch (e) {  
+        } catch (e) {
             history.push('/Apply/Failed');
 
             }
@@ -155,7 +147,6 @@ function Application() {
 
     return (
         <div>
-            <h1>Club Member Application</h1>
                 <FormControl>
                     {
                      errors.length > 0 ?
@@ -210,7 +201,7 @@ function Application() {
                             <MenuItem value="Software and Information Systems Engineering">Software and Information Systems Engineering</MenuItem>
                             <MenuItem value="Management Information Systems Engineering">Management Information Systems Engineering</MenuItem>
                             <MenuItem value="Other">Other</MenuItem>
-                            
+
                         </Select>
                         {console.log("major:" + major)}
 
@@ -297,7 +288,6 @@ function Application() {
                         ))}
                     </FormGroup>
                 </FormControl>
-
                 <FormControl>
                     <FormLabel>Other</FormLabel>
                     <div>
@@ -312,9 +302,7 @@ function Application() {
                         {console.log("Tech Skills:" + skillList)}
                     </FormGroup>
                     </div>
-
                 </FormControl>
-
                 <div>
                     <FormControl>
                         <FormLabel>What are your available days?</FormLabel>
@@ -328,9 +316,7 @@ function Application() {
                             {console.log("Available Days:" + dayList)}
                         </FormGroup>
                     </FormControl>
-
                 </div>
-
                 <div>
                     <FormControl>
                         <FormLabel>Did you ever take part in a voluntary program? Please describe</FormLabel>
@@ -344,7 +330,6 @@ function Application() {
                         {console.log("Voluntary:" + voluntary)}
                     </FormControl>
                 </div>
-
                 <div>
                     <FormControl>
                         <FormLabel>Why would you like to join DSC? (Interests , projects you want to promote
@@ -359,7 +344,6 @@ function Application() {
                         {console.log("Why join us:" + whyJoin)}
                     </FormControl>
                 </div>
-
                 <Button variant="outlined" size="large" color="primary" onClick={Submit}>
                     Submit
                 </Button>

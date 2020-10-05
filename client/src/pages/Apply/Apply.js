@@ -1,20 +1,16 @@
-import React , {useState} from "react";
-import GoogleIntegration from "../../components/GoogleIntegration";
+import React from "react";
 import Application from "./Appliction/Application";
 import Footer from "../../components/Footer";
+import Typography from "@material-ui/core/Typography";
 
 function Apply() {
 
-    const [isSigned , setIsSigned] = useState(false);
-
-    const googleIntegrationHandler = () => {
-        setIsSigned(true);
-    }
 
     return (
         <div>
-            <br/><br/>
-            {/*{!isSigned ? <GoogleIntegration/> : <Application/>}*/}
+            <Typography variant="h2" gutterBottom className={'header'}>
+                Club Member Application
+            </Typography>
             <Application/>
             <Footer/>
         </div>

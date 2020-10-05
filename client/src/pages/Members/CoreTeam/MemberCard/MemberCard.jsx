@@ -24,9 +24,6 @@ const MemberCard = (props)=>{
                         {facebook && <a href={facebook} className={'socialIcon'}>
                             <Facebook/>
                         </a>}
-                        {instagram && <a href={instagram}>
-                            <Instagram className={'socialIcon'}/>
-                        </a>}
                         {linkedin && <a href={linkedin}>
                             <LinkedIn className={'socialIcon'}/>
                         </a>}

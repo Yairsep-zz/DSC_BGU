@@ -9,14 +9,13 @@ import {Link} from "react-router-dom";
 function Home() {
     return (
         <div className="container">
-                        <h1><b>
-                            Developers Student Clubs
-                        </b></h1>
-                        <h1 style={{fontWeight: 700, margin:0,}}>BGU</h1>
+            <h1 className={"header"}><b>
+                BGU Developers Student Club
+            </b></h1>
             <div className="row">
                 <div className="col-6">
                     <div className="leftSide-col">
-                        <p style={{fontSize: 20,marginTop:14,textAlign:"justify",}}> 
+                        <p style={{fontSize: 20, marginTop: 14, textAlign: "justify",}}>
                             Developer Student Clubs are university based community
                             groups for students interested in Google developer
                             technologies. Students from all undergraduate or
@@ -24,27 +23,19 @@ function Home() {
                             developer are welcome.
                         </p>
                         <br/>
-                        <Link to="/Apply">
-                        <Button variant="contained" size="large" color="primary">
-                            Join DSC BGU
-                        </Button>
+                        <Link to="/Apply" style={{textDecoration: "none"}}>
+                            <Button variant="contained" size="large" color="primary" >
+                                Join DSC BGU
+                            </Button>
                         </Link>
-                                    <ClubSocialIcons/>
+                        <ClubSocialIcons/>
                     </div>
                 </div>
-            
                 <div className="col-6">
-                    <div className ="rightSide-col">
+                    <div className="rightSide-col">
                         <img className="image" src='/pictures/content/home-why.png'/>
                     </div>
                 </div>
-            </div>
-
-            <br/>
-            <br/>
-
-            <div>
-                <Technologies/>
             </div>
             <Footer/>
         </div>

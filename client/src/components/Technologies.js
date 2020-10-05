@@ -11,11 +11,13 @@ const TechnologiesList = require('../data/TechnologiesList.json');
 
 //const history = useHistory()
 function Technologies() {
-    
+
     return (
         <div className="technologies">
             <div className="header">
-            <h2>Technologies</h2>
+                <Typography variant="h2" gutterBottom className={'header'}>
+                    Technologies
+                </Typography>
             </div>
             <div className="description">
             <p>These are some of the technologies we mainly try to focus at DSC BGU</p>
@@ -26,7 +28,7 @@ function Technologies() {
                         {TechnologiesList.map((technology) => (
                             <CardMedia className={'AvatarContainer'}>
                                 <Avatar alt={technology.Name} src={technology.ImageUrl} className={"avatar"}/>
-                                    <Link to={`/Content${technology.Link}`} style={{textDecoration: "none"}}>
+                                    <Link to={`/content${technology.Link}`} style={{textDecoration: "none"}}>
                                         <Typography variant="h5" component="h2">
                                             {technology.Name}
                                             {console.log(technology)}
