@@ -3,7 +3,6 @@ import { useFirestore, useFirestoreCollectionData } from 'reactfire'
 import Typography from '@material-ui/core/Typography'
 import ProjectCard from './ProjectCard/ProjectCard'
 import './Projects.scss'
-import Footer from '../../components/Footer'
 import ConstructionPage from '../../components/ConstructionPage'
 
 function Projects() {
@@ -19,7 +18,6 @@ function Projects() {
       {/*    {projects.map((project) => <ProjectCard project={project} key={project.id}/>)} */}
       {/* </div> */}
       <ConstructionPage />
-      <Footer />
     </div>
   )
 }

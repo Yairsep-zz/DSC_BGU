@@ -3,7 +3,6 @@ import './Collabs.scss'
 import { useFirestore, useFirestoreCollectionData } from 'reactfire'
 import Typography from '@material-ui/core/Typography'
 import CollabsCard from './CollabsCard/CollabsCard'
-import Footer from '../../components/Footer'
 
 function Collabs() {
   const collection = useFirestore().collection('Partners').orderBy('id', 'asc')
@@ -17,9 +16,14 @@ function Collabs() {
       <div className="CollabsCards">
         {collabs
           .filter(({ name }) => !name.includes('DSC'))
-          .map((collab) => <CollabsCard collab={collab} key={collab.id} />)}
+          .map((collab, i) => (
+            <CollabsCard
+              style={{ animationDelay: `${200 * i}ms` }}
+              collab={collab}
+              key={collab.id}
+            />
+          ))}
       </div>
-      <Footer />
     </div>
   )
 }

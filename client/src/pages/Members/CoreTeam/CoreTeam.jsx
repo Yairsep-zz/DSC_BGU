@@ -14,7 +14,13 @@ function CoreTeam() {
         Core Team
       </Typography>
       <div className="teamCards">
-        {coreTeam.map((member) => <MemberCard member={member} key={member.id} />)}
+        {coreTeam.map((member, i) => (
+          <MemberCard
+            member={member}
+            key={member.id}
+            style={{ animationDelay: `${200 * i}ms` }}
+          />
+        ))}
       </div>
     </div>
   )

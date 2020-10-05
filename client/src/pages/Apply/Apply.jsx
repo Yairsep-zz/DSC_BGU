@@ -1,7 +1,6 @@
 import React from 'react'
 import Typography from '@material-ui/core/Typography'
 import Application from './Appliction/Application'
-import Footer from '../../components/Footer'
 
 function Apply() {
   return (
@@ -10,7 +9,6 @@ function Apply() {
         Club Member Application
       </Typography>
       <Application />
-      <Footer />
     </div>
   )
 }

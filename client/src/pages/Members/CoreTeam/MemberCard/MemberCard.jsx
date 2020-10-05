@@ -9,12 +9,12 @@ import {
 } from '@material-ui/icons'
 
 const MemberCard = (props) => {
-  const { member } = props
+  const { member, style } = props
   const {
     name, role, pic, facebook, linkedin, email,
   } = member
   return (
-    <div className="MemberCard">
+    <div className="MemberCard" style={style}>
       <div className="card" elevation={5}>
         <CardMedia className="AvatarContainer">
           <Avatar alt={name} src={pic || '/dscLogo.png'} className="avatar" />

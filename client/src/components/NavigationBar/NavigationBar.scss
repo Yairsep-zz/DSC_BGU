@@ -1,39 +1,79 @@
-  .appBar{
-    background-color: white !important;
-    color: black;
-    display: flex ;
-    justify-content: space-between;
-    flex-direction: row !important;
-    height: 100px;
-    align-items: center;
-    .left{
-      display: flex;
-      justify-content: flex-start;
+.appBar {
+  background-color: white !important;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row !important;
+  height: 80px;
+  align-items: center;
+  .left {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    .logo {
+      height: 100%;
+      width: 20vw;
+      max-width: 250px;
+      object-fit: contain;
       padding-left: 20px;
-      .logo{
-        height: 100%;
-        width: 20vw;
-        max-width: 250px;
-        object-fit: contain;
-        padding-left: 20px;
-      }
-    }
-    .right{
-      display: flex;
-      justify-content: flex-end;
-      padding-right: 20px;
-      .link{
-        color: #716c80;
-       text-decoration: none;
-        font-weight: 600;
-        margin: 10px;
-      }
-      .link:hover , .link-active{
-        color: #4284f7;
-      }
     }
   }
-  .NavBarMenuItem{
-    text-decoration: none;
-    color: black;
+  .right {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    .link {
+      color: #716c80;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 10px;
+    }
+    .link:hover,
+    .link-active {
+      color: #4284f7;
+      animation: bounce 0.5s;
+    }
   }
+}
+.NavBarMenuItem {
+  text-decoration: none;
+  color: black;
+}
+
+//CSS3 Bounce Animation
+@-webkit-keyframes bounce {
+  0%,  
+  100% {
+     -webkit-transform: translateY(0);
+  } 
+  50% {
+      -webkit-transform: translateY(-5px);
+  }
+}
+@-moz-keyframes bounce {
+  0%, 
+  100% {
+     -moz-transform: translateY(0);
+  }
+  50% {
+     -moz-transform: translateY(-5px);
+  }
+}
+@-o-keyframes bounce {
+  0%,
+  100% {
+     -o-transform: translateY(0);
+  }
+  50% {
+     -o-transform: translateY(-5px);
+  }
+}
+@keyframes bounce {
+  0%,  
+  100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-5px);
+  }
+}

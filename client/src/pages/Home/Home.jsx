@@ -3,7 +3,7 @@ import './Home.scss'
 import Button from '@material-ui/core/Button'
 import { Link } from 'react-router-dom'
 import ClubSocialIcons from '../../components/ClubSocialIcons'
-import Footer from '../../components/Footer'
+import Bubbles from '../../components/Bubbles/Bubbles'
 
 function Home() {
   return (
@@ -38,7 +38,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <Footer />
+      <Bubbles />
     </div>
   )
 }

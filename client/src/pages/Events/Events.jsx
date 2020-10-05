@@ -3,7 +3,6 @@ import { useFirestore, useFirestoreCollectionData } from 'reactfire'
 import Typography from '@material-ui/core/Typography'
 import EventCard from './EventsCard/EventCard'
 import './Events.scss'
-import Footer from '../../components/Footer'
 
 function Events() {
   const collection = useFirestore().collection('Events')
@@ -19,7 +18,6 @@ function Events() {
           {events.map((event) => <EventCard event={event} key={event.id} />)}
         </div>
       </div>
-      <Footer />
     </div>
   )
 }

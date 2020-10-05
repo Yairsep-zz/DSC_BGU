@@ -8,7 +8,6 @@ import FormHelperText from '@material-ui/core/FormHelperText'
 import FormLabel from '@material-ui/core/FormLabel'
 import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button'
-import Footer from '../../components/Footer'
 import GoogleIntegration from '../../components/GoogleIntegration'
 import ClubSocialIcons from '../../components/ClubSocialIcons'
 
@@ -94,7 +93,6 @@ function Contact() {
         </div>
       </div>
       <br />
-      <Footer />
     </div>
   )
 }

@@ -6,10 +6,10 @@ import {
 import Typography from '@material-ui/core/Typography'
 
 const CollabsCard = (props) => {
-  const { collab } = props
+  const { collab, style } = props
   const { name, logo, url } = collab
   return (
-    <div className="CollabsCard">
+    <div style={style} className="CollabsCard">
       <Card className="card" elevation={5}>
         <CardMedia className="AvatarContainer">
           <Avatar alt={name} src={logo} className="avatar" />

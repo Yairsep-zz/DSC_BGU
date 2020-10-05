@@ -4,7 +4,16 @@ import { Copyright } from '@material-ui/icons'
 
 function Footer() {
   return (
-    <Grid container alignItems="center" justify="center">
+    <Grid
+      container
+      alignItems="center"
+      justify="center"
+      style={{
+        position: 'absolute',
+        bottom: 0,
+        width: '100%',
+      }}
+    >
       <Grid item>
         <div className="copyright-area" style={{ marginTop: '20px' }}>
           <div className="container">
