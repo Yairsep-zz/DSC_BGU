@@ -45,6 +45,8 @@
   "devDependencies": {
     "clsx": "^1.1.1",
     "istanbul-lib-coverage": "^3.0.0",
-    "prop-types": "^15.7.2"
+    "prop-types": "^15.7.2",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-makestyles": "^0.1.11"
   }
 }
