@@ -1,6 +1,6 @@
 import React from 'react'
 import Typography from '@material-ui/core/Typography'
-import Application from './Appliction/Application'
+import Application from './Appliction/AttemptApplication'
 
 function Apply() {
   return (
