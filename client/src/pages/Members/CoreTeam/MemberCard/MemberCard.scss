@@ -1,4 +1,7 @@
 .MemberCard{
+  animation: card-effect 1s ease-in-out backwards;
+  transition: all 2s ease-in-out;
+  position: relative;
   .card{
     margin: 30px;
     padding: 10px;
@@ -28,5 +31,16 @@
         }
       }
     }
+  }
+}
+
+@keyframes card-effect {
+  0% {
+    opacity: 0;
+    transform: 'translateY(-16px)';
+  };
+  100% {
+    opacity: 1;
+    transform: 'none';
   }
 }

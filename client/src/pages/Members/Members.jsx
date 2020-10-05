@@ -1,16 +1,14 @@
-import React from "react";
-import CoreTeam from "./CoreTeam/CoreTeam";
-import ClubMembers from "./ClubMembers/ClubMembers";
-import Footer from "../../components/Footer";
+import React from 'react'
+import CoreTeam from './CoreTeam/CoreTeam'
+import ClubMembers from './ClubMembers/ClubMembers'
 
 function Members() {
-    return (
-        <div>
-            <CoreTeam/>
-            <ClubMembers/>
-            <Footer/>
-        </div>
-    );
+  return (
+    <div>
+      <CoreTeam />
+      <ClubMembers />
+    </div>
+  )
 }
 
-export default Members;
+export default Members

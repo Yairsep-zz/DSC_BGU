@@ -1,16 +1,13 @@
-import React from "react";
-import ConstructionPage from "../../../components/ConstructionPage";
-import Footer from "../../../components/Footer";
+import React from 'react'
+import ConstructionPage from '../../../components/ConstructionPage'
 
 function MLpage() {
-
-    return (
-        <div>
-            <h1>Machine Learning</h1>
-            <ConstructionPage/>
-            <Footer/>
-        </div>
-    );
+  return (
+    <div>
+      <h1>Machine Learning</h1>
+      <ConstructionPage />
+    </div>
+  )
 }
 
-export default MLpage;
+export default MLpage
