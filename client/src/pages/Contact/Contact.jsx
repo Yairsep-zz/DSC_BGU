@@ -54,12 +54,6 @@ function Contact() {
                   aria-describedby="my-helper-text"
                   onChange={(event) => setEmail(event.target.value)}
                 />
-                <FormHelperText
-                  style={{ padding: 15, paddingTop: 2 }}
-                  id="my-helper-text"
-                >
-                  We&apos;ll never share your email.
-                </FormHelperText>
               </FormControl>
               <br />
 

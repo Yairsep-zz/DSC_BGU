@@ -15,7 +15,13 @@ function Events() {
           Events
         </Typography>
         <div className="EventsCards">
-          {events.map((event) => <EventCard event={event} key={event.id} />)}
+          {events.map((event, i) => (
+                  <EventCard
+                      style={{ animationDelay: `${200 * i}ms` }}
+                      event={event}
+                      key={event.id}
+                  />
+              ))}
         </div>
       </div>
     </div>

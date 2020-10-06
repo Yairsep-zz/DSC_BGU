@@ -16,7 +16,7 @@ const EventCard = (props) => {
         </CardMedia>
         <CardContent className="content">
           <Typography gutterBottom variant="h5" component="h2">
-            <a href={url}>
+            <a style={{ color: 'black', textDecoration: 'none' }} href={url}>
               {name}
             </a>
           </Typography>

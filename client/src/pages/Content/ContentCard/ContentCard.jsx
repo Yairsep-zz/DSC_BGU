@@ -4,26 +4,27 @@ import {
   Avatar, Card, CardContent, CardMedia,
 } from '@material-ui/core'
 import Typography from '@material-ui/core/Typography'
+import { Link } from 'react-router-dom'
 
 const ContentCard = (props) => {
-  const { content } = props
-  const { name, url, pic } = content
+  const { technology, style } = props
+  const { Name, ImageUrl, route } = technology
+  console.log("route:" + route);
   return (
-    <div className="ContentCard">
-      <Card className="card" elevation={5}>
-        <CardMedia className="AvatarContainer">
-          <Avatar alt={name} src={pic} className="avatar" />
-        </CardMedia>
-        <CardContent className="content">
-          <Typography gutterBottom variant="h5" component="h2">
-            <a href={url}>
-              {name}
-            </a>
-          </Typography>
-          <Typography color="textSecondary" variant="h6" component="h3" className="role" />
-        </CardContent>
-      </Card>
-    </div>
+      <div style={style} className="CollabsCard">
+        <Card className="card" elevation={5}>
+          <CardMedia className="AvatarContainer">
+            <Avatar alt={Name} src={ImageUrl} className="avatar" />
+          </CardMedia>
+          <CardContent className="content">
+            <Typography gutterBottom variant="h6" component="h2">
+              <Link to={route} style={{ textDecoration: 'none' }}>
+                {Name}
+            </Link>
+            </Typography>
+          </CardContent>
+        </Card>
+      </div>
   )
 }
 

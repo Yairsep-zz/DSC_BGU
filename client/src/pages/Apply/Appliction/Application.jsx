@@ -180,7 +180,6 @@ function Application() {
           aria-describedby="my-helper-text"
           onChange={(event) => setEmail(event.target.value)}
         />
-        <FormHelperText id="my-helper-text">We'll never share your email.</FormHelperText>
         {console.log(`Email:${email}`)}
       </FormControl>
       <br />

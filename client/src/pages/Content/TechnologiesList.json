@@ -2,21 +2,21 @@
   {
     "Name":"Web Development",
     "ImageUrl":"pictures/technologies/webdev.jpg",
-    "Link": "/WebDev"
+    "route": "/content/WebDev"
   },
   {
     "Name":"Mobile Development",
     "ImageUrl":"pictures/technologies/mobiledev.png",
-    "Link": "/MobileDev"
+    "route": "/content/MobileDev"
   },
   {
     "Name":"Python Development",
     "ImageUrl":"pictures/technologies/python-logo.png",
-    "Link": "/PythonDev"
+    "route": "/content/PythonDev"
   },
   {
     "Name":"Machine Learning",
     "ImageUrl":"pictures/technologies/ml.jpg",
-    "Link": "/ML"
+    "route": "/content/ML"
   }
   ]

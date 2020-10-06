@@ -1,32 +1,54 @@
-.EventCard{
-  .card{
+.EventCard {
+  animation: card-effect 1s ease-in-out backwards;
+  transition: all 2s ease-in-out;
+  position: relative;
+  .card {
     margin: 30px;
     padding: 10px;
-    display: flex;
+    //display: flex;
     justify-content: space-around;
     align-items: center;
     width: 300px;
-    height: 400px;
-    .AvatarContainer{
+    height: 300px;
+    box-shadow: none;
+    .AvatarContainer {
       display: flex;
       justify-content: center;
-      .avatar{
+      .avatar {
+        background: white;
         display: flex;
         width: 200px;
         height: 200px;
         border: darkgray solid 3px;
+        .MuiAvatar-img {
+          overflow: hidden;
+          height: auto;
+        }
       }
     }
-    .content{
-      .socialRow{
+    .content {
+      padding: 50;
+      padding-left: 20%;
+      .socialRow {
         height: 20px;
         display: flex;
         justify-content: space-around;
-        .socialIcon{
+        .socialIcon {
           color: darkgray;
           height: 30px;
         }
       }
     }
+  }
+}
+
+@keyframes card-effect {
+  0% {
+    opacity: 0;
+    transform: "translateY(-16px)";
+  }
+  100% {
+    opacity: 1;
+    transform: "none";
   }
 }
