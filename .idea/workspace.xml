@@ -21,30 +21,16 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/esti" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6357ff79-d7ba-41a3-a5e1-79182789428f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/pictures/technologies/ml.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/pictures/technologies/ml.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/pictures/technologies/mobiledev.png" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/pictures/technologies/mobiledev.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/pictures/technologies/webdev.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/pictures/technologies/webdev.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Technologies.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/data/TechnologiesList.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Content/TechnologiesList.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/Application.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/Application.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Apply/Apply.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Apply/Apply.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Contact/Contact.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Contact/Contact.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Contact/Contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Contact/Contact.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Content/Content.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Content/Content.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Content/ContentCard/ContentCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Content/ContentCard/ContentCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Content/ContentCard/ContentCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Content/ContentCard/ContentCard.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Events/Events.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Events/Events.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Events/EventsCard/EventCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Events/EventsCard/EventCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Events/EventsCard/EventCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Events/EventsCard/EventCard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/AdditionalInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/AdditionalInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/AttemptApplication.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/AttemptApplication.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/PersonalInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/PersonalInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/SkillsAndAvb.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/SkillsAndAvb.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -332,7 +318,13 @@
       <option name="presentableId" value="LOCAL‎00036" />
       <updated>1601882008340</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL‎00037" summary="Merge with Emi &amp; Bug fix">
+      <created>1602046678003</created>
+      <option name="number" value="LOCAL‎00037" />
+      <option name="presentableId" value="LOCAL‎00037" />
+      <updated>1602046678003</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,7 +377,8 @@
     <MESSAGE value="Merging (Navbar &amp; Contactus &amp; Members) 4/10" />
     <MESSAGE value="Mergin (Collabs &amp; Apply) 4/10" />
     <MESSAGE value="Small fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small fixes" />
+    <MESSAGE value="Merge with Emi &amp; Bug fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge with Emi &amp; Bug fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2064" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601817428904">
@@ -403,11 +396,11 @@
     <state x="264" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1601568038938" />
     <state x="2316" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601882007649" />
     <state x="264" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1601648060663" />
-    <state x="2208" y="-26" width="1595" height="572" maximized="true" key="DiffContextDialog" timestamp="1601827113246">
+    <state x="2208" y="-26" width="1595" height="572" maximized="true" key="DiffContextDialog" timestamp="1602046990678">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2338" y="120" key="DiffContextDialog/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1601559079951" />
-    <state x="2208" y="-26" width="1595" height="572" maximized="true" key="DiffContextDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601827113246" />
+    <state x="2208" y="-26" width="1595" height="572" maximized="true" key="DiffContextDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602046990678" />
     <state x="465" y="261" key="Github.CreateGistDialog" timestamp="1600698989897">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
