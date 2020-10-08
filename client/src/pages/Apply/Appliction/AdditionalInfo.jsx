@@ -1,7 +1,7 @@
 import React from 'react'
 import Grid from '@material-ui/core/Grid'
 import TextField from '@material-ui/core/TextField'
-import {  Input } from '@material-ui/core'
+import {Input} from '@material-ui/core'
 import InputLabel from '@material-ui/core/InputLabel'
 import FormControl from '@material-ui/core/FormControl'
 import FormHelperText from '@material-ui/core/FormHelperText'
@@ -12,16 +12,17 @@ import FormControlLabel from '@material-ui/core/FormControlLabel'
 import Checkbox from '@material-ui/core/Checkbox'
 import FormGroup from '@material-ui/core/FormGroup'
 import Button from '@material-ui/core/Button'
-export default function AdditionalInformation({
-                                                  data: {
-                                                      voluntary,
-                                                      setVoluntary,
-                                                      whyJoin,
-                                                      setWhyJoin
-                                                  },
 
+export default function AdditionalInformation(
 
-                                              }) {
+    {
+        data: {
+            voluntary,
+            setVoluntary,
+            whyJoin,
+            setWhyJoin
+        },
+    }) {
 
 
     return (
@@ -43,6 +44,8 @@ export default function AdditionalInformation({
                             {console.log(`Voluntary:${voluntary}`)}
                         </FormControl>
                     </div>
+                </Grid>
+                <Grid>
                     <div>
                         <FormControl>
                             <FormLabel>

@@ -19,18 +19,19 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6357ff79-d7ba-41a3-a5e1-79182789428f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/AdditionalInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/AdditionalInfo.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/AttemptApplication.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/AttemptApplication.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/PersonalInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/PersonalInfo.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/SkillsAndAvb.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/SkillsAndAvb.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Home/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Members/Members.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Members/Members.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -324,7 +325,13 @@
       <option name="presentableId" value="LOCAL‎00037" />
       <updated>1602046678003</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL‎00038" summary="Merge with Emi &amp; Bug fix">
+      <created>1602047259070</created>
+      <option name="number" value="LOCAL‎00038" />
+      <option name="presentableId" value="LOCAL‎00038" />
+      <updated>1602047259070</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,7 +348,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/esti" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -390,11 +397,11 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2619" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601281241181" />
-    <state x="2316" y="0" key="CommitChangelistDialog2" timestamp="1601882007649">
+    <state x="2316" y="0" key="CommitChangelistDialog2" timestamp="1602047258502">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="264" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1601568038938" />
-    <state x="2316" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601882007649" />
+    <state x="2316" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602047258502" />
     <state x="264" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1601648060663" />
     <state x="2208" y="-26" width="1595" height="572" maximized="true" key="DiffContextDialog" timestamp="1602046990678">
       <screen x="1920" y="0" width="1920" height="1040" />
