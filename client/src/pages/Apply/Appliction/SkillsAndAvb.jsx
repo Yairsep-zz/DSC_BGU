@@ -82,25 +82,19 @@ export default function SkillsAndAvb({
 
 
                     <FormLabel>Choose your major</FormLabel>
-                    <Select onChange={({ target: { value } }) => setMajor(value)}>
+                    <Select fullWidth={1} onChange={({ target: { value } }) => setMajor(value)}>
                         <MenuItem value="Computer Science">Computer Science</MenuItem>
                         <MenuItem value="Software Engineering">Software Engineering</MenuItem>
                         <MenuItem value="Industrial Engineering and Management">Industrial Engineering and Management</MenuItem>
                         <MenuItem value="Software and Information Systems Engineering">Software and Information Systems Engineering</MenuItem>
                         <MenuItem value="Management Information Systems Engineering">Management Information Systems Engineering</MenuItem>
                         <MenuItem value="Other">Other</MenuItem>
-
-
-
                     </Select>
-
-                    {
-                        major == 'Other'
-                            ? (
+                    {major == 'Other' ? (
                                 <div>
                                     <FormControl>
                                         <InputLabel>Major</InputLabel>
-                                        <Input
+                                        <Input fullWidth={1}
                                             id="OtherMajor"
                                             placeholder="Enter your Major"
                                             onChange={(event) => setOtherMajor(event.target.value)}
@@ -111,14 +105,23 @@ export default function SkillsAndAvb({
                             )
                             : <div />
                     }
-
                     {console.log(`major:${major}`)}
-
-
-                    <br />
-                    <br />
-                    <br />
-                    <br />
+                </Grid>
+                <Grid item xs={12} md={6}>
+                        <FormControl>
+                            <FormLabel>What are your available days?</FormLabel>
+                            <FormGroup row>
+                                {availableDays.map((day) => (
+                                    <FormControlLabel
+                                        control={<Checkbox name={day} onClick={handleDaysToggle(day)} />}
+                                        label={`${day} After 18:00`}
+                                    />
+                                ))}
+                                {console.log(`Available Days:${dayList}`)}
+                            </FormGroup>
+                        </FormControl>
+                </Grid>
+                <Grid item xs={12} md={6}>
                     <InputLabel>Technical Skills (Optional)</InputLabel>
                     <FormControl>
                         <FormLabel>Programing Languages</FormLabel>
@@ -195,24 +198,8 @@ export default function SkillsAndAvb({
                             </FormGroup>
                         </div>
                     </FormControl>
-
-                    <div>
-                        <FormControl>
-                            <FormLabel>What are your available days?</FormLabel>
-                            <FormGroup row>
-                                {availableDays.map((day) => (
-                                    <FormControlLabel
-                                        control={<Checkbox name={day} onClick={handleDaysToggle(day)} />}
-                                        label={`${day} After 18:00`}
-                                    />
-                                ))}
-                                {console.log(`Available Days:${dayList}`)}
-                            </FormGroup>
-                        </FormControl>
-                    </div>
-
                 </Grid>
-            </Grid>
+                </Grid>
         </>
     )
 }

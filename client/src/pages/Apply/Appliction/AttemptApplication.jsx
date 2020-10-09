@@ -203,7 +203,7 @@ export default function ApplicationStepper() {
               </Step>
           ))}
         </Stepper>
-        <div>
+        <div style={{display: "flex"}}>
           {activeStep === steps.length ? (
               <div>
                 <Typography className={classes.instructions}>
@@ -227,10 +227,6 @@ export default function ApplicationStepper() {
                       {activeStep === steps.length - 1 ? 'Submit' : 'Next'}
                     </Button>
                   </div>
-                  <br/>
-                  <br/>
-
-
                 </Container>
               </div>
           )}
