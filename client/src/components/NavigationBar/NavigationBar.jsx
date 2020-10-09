@@ -45,7 +45,7 @@ function NavigationBar() {
     setAnchorEl(null)
   }
   const handleScroll = () => {
-    setElevation(document.getElementsByTagName('html')[0].scrollTop === 0 ? 0 : 5)
+    setElevation(document.getElementsByTagName('html')[0].scrollTop === 0 ? 2 : 5)
   }
   const resize = () => {
     setShowNavBar(!isMobile())

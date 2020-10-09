@@ -7,27 +7,29 @@
     padding: 10px;
     //display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     width: 300px;
-    height: 300px;
-    box-shadow: none;
+    height: 200px;
+    background-color: white;
     .AvatarContainer {
       display: flex;
       justify-content: center;
+      padding:  10px 0 0 20px;
       .avatar {
         display: flex;
-        width: 200px;
-        height: 200px;
-        border: darkgray solid 3px;
+        width: 64px;
+        height: 64px;
+        //border: darkgray solid 3px;
         .MuiAvatar-img {
           overflow: hidden;
           height: auto;
+          object-fit: contain;
         }
       }
     }
     .content {
-      padding: 50;
-      padding-left: 20%;
+      //padding: 50;
+      //padding-left: 20%;
       .socialRow {
         height: 20px;
         display: flex;

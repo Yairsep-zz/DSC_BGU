@@ -1,22 +1,22 @@
 [
   {
     "Name":"Web Development",
-    "ImageUrl":"pictures/technologies/webdev.jpg",
+    "ImageUrl":"pictures/technologies/website.svg",
     "route": "/content/WebDev"
   },
   {
     "Name":"Mobile Development",
-    "ImageUrl":"pictures/technologies/mobiledev.png",
+    "ImageUrl":"pictures/technologies/flutter.png",
     "route": "/content/MobileDev"
   },
   {
     "Name":"Python Development",
-    "ImageUrl":"pictures/technologies/python-logo.png",
+    "ImageUrl":"pictures/technologies/python-logo.svg",
     "route": "/content/PythonDev"
   },
   {
     "Name":"Machine Learning",
-    "ImageUrl":"pictures/technologies/ml.jpg",
+    "ImageUrl":"pictures/technologies/machine-learning-logo.png",
     "route": "/content/ML"
   }
   ]
