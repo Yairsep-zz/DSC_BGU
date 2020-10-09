@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 import AppBar from '@material-ui/core/AppBar'
 import './NavigationBar.scss'
 import { IconButton, Menu, MenuItem } from '@material-ui/core'
-import MoreVertIcon from '@material-ui/icons/MoreVert'
+import MenuIcon from '@material-ui/icons/Menu'
 import { isMobile } from '../../utils/utils'
 
 const routes = [
@@ -76,7 +76,7 @@ function NavigationBar() {
             : (
               <div>
                 <IconButton onClick={handleClick}>
-                  <MoreVertIcon />
+                  <MenuIcon />
                 </IconButton>
                 <Menu
                   id="simple-menu"
