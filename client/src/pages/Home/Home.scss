@@ -33,6 +33,7 @@
             margin-right: 50px;
             align-items: center;
             .image{
+                margin: 20px 0;
                 width: 30vw;
                 max-width: 500px;
             }
@@ -55,6 +56,13 @@
             flex-direction: column;
             .left,.right{
                 padding: 0 10%;
+            }
+            .right{
+                margin-right: 0;
+                .image{
+                    margin: 20px 0;
+                    width: 60vw;
+                }
             }
         }
     }
