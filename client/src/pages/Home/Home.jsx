@@ -4,9 +4,7 @@ import Button from '@material-ui/core/Button'
 import { Link } from 'react-router-dom'
 import ClubSocialIcons from '../../components/ClubSocialIcons'
 import Bubbles from '../../components/Bubbles/Bubbles'
-import Typography from "@material-ui/core/Typography";
 import Icon from "@material-ui/core/Icon";
-import {isMobile} from "../../utils/utils";
 
 function Home() {
   return (

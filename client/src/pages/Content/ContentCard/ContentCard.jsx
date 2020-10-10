@@ -4,11 +4,9 @@ import {
   Avatar, Card, CardContent, CardMedia,
 } from '@material-ui/core'
 import Typography from '@material-ui/core/Typography'
-import { Link } from 'react-router-dom'
-
 const ContentCard = (props) => {
   const { technology, style } = props
-  const { Name, ImageUrl, route } = technology
+  const { Name, ImageUrl} = technology
   return (
       <div style={style} className="ContentCard">
         <Card className="card" elevation={1}>
