@@ -9,7 +9,7 @@ function Collabs() {
   const collabs = useFirestoreCollectionData(collection, { idField: 'id' }) // TODO: Change Const Name
 
   return (
-    <div className="CollabsPage">
+    <div className="CollabsPage" style={{marginTop: "30px"}}>
       <Typography variant="h2" gutterBottom className="header">
         Collaborations
       </Typography>

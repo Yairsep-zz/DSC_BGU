@@ -1,7 +1,7 @@
 [
   {
     "Name":"Web Development",
-    "ImageUrl":"pictures/technologies/website.svg",
+    "ImageUrl":"pictures/technologies/react-logo.png",
     "route": "/content/WebDev"
   },
   {
@@ -11,12 +11,12 @@
   },
   {
     "Name":"Python Development",
-    "ImageUrl":"pictures/technologies/python-logo.svg",
+    "ImageUrl":"pictures/technologies/python-logo.png",
     "route": "/content/PythonDev"
   },
   {
     "Name":"Machine Learning",
-    "ImageUrl":"pictures/technologies/machine-learning-logo.png",
+    "ImageUrl":"pictures/technologies/ml.jpg",
     "route": "/content/ML"
   }
   ]

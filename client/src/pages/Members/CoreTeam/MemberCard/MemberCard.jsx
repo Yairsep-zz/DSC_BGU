@@ -4,9 +4,9 @@ import {
   Avatar, CardContent, CardMedia,
 } from '@material-ui/core'
 import Typography from '@material-ui/core/Typography'
-import {
-  Facebook, LinkedIn, Mail,
-} from '@material-ui/icons'
+import FacebookIcon from '@material-ui/icons/Facebook';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import MailIcon from '@material-ui/icons/Mail';
 
 const MemberCard = (props) => {
   const { member, style } = props
@@ -29,17 +29,17 @@ const MemberCard = (props) => {
           <div className="socialRow">
             {facebook && (
               <a href={facebook} className="socialIcon">
-                <Facebook />
+                <FacebookIcon />
               </a>
             )}
             {linkedin && (
               <a href={linkedin}>
-                <LinkedIn className="socialIcon" />
+                <LinkedInIcon className="socialIcon" />
               </a>
             )}
             {email && (
               <a href={`mailto:${email}`}>
-                <Mail className="socialIcon" />
+                <MailIcon className="socialIcon" />
               </a>
             )}
           </div>

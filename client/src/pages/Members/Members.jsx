@@ -4,7 +4,7 @@ import ClubMembers from './ClubMembers/ClubMembers'
 
 function Members() {
   return (
-    <div>
+    <div style={{marginTop: "30px"}}>
       <CoreTeam />
       {/*<ClubMembers />*/}
     </div>
