@@ -1,7 +1,7 @@
 .App {
   text-align: center;
-  height: 90vh;
-  overflow: auto;
+  height: 100%;
+  padding-bottom: 20px;
 }
 
 

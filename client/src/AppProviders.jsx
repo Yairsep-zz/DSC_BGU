@@ -7,20 +7,20 @@ import NavigationBar from './components/NavigationBar/NavigationBar'
 import { firebaseConfig } from './utils/firebaseConfig'
 import theme from './lib/theme'
 import App from './App'
-import Footer from './components/Footer'
+import Footer from './components/Footer/Footer'
 
 function AppProviders() {
   return (
     <MuiThemeProvider theme={theme}>
       <CssBaseline />
       <FirebaseAppProvider firebaseConfig={firebaseConfig}>
-        <div className="App">
-          <Router>
-            <NavigationBar />
-            <App />
-          </Router>
-        </div>
-        <Footer />
+              <div className="App">
+                  <Router>
+                      <NavigationBar />
+                      <App />
+                  </Router>
+                  <Footer />
+              </div>
       </FirebaseAppProvider>
     </MuiThemeProvider>
   )
