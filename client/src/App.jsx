@@ -22,7 +22,7 @@ import {
 function App() {
   return (
     <Suspense fallback={<Loader />}>
-      <div style={{paddingBottom:'95px'}}>
+      <div style={{flex:1}}>
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/home" component={Home} />
