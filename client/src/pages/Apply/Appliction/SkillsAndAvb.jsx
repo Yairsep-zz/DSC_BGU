@@ -12,6 +12,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel'
 import Checkbox from '@material-ui/core/Checkbox'
 import FormGroup from '@material-ui/core/FormGroup'
 import Button from '@material-ui/core/Button'
+import '../Apply.scss'
 export default function SkillsAndAvb({
                                          data: {
                                              major,
@@ -39,14 +40,12 @@ export default function SkillsAndAvb({
                                      })
 
 {
-
-
-    const programingLanguages = ['Java', 'Python', 'C++']
-    const webDev = ['React', 'Vue', 'Angular', 'Node.js']
+    const programingLanguages = ['Java', 'Python', 'C++', 'Node.js', 'Go','Other']
+    const webDev = ['React', 'Vue', 'Angular','JQuery']
     const mobileDev = ['React Native', 'Flutter', 'Kotlin']
     const googleTech = ['Firebase', 'Google Cloud Platform', 'TensorFlow']
-    const versionControl = ['Git']
-    const skills = ['Machine Learning', 'Cyber Security']
+    const versionControl = ['Git', 'Docker', 'CI/CD']
+    const skills = ['Machine Learning', 'Cyber Security','AWS', 'SQL']
     const availableDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday']
 
     const handleTechToggle = (skill) => () => {
@@ -77,10 +76,8 @@ export default function SkillsAndAvb({
     }
     return (
         <>
-            <Grid container spacing={3}>
-                <Grid item xs={12} md={6}>
-
-
+            <div className={'FormContainer'}>
+                <div className={'section'}>
                     <FormLabel>Choose your major</FormLabel>
                     <Select fullWidth={1} onChange={({ target: { value } }) => setMajor(value)}>
                         <MenuItem value="Computer Science">Computer Science</MenuItem>
@@ -100,30 +97,27 @@ export default function SkillsAndAvb({
                                             onChange={(event) => setOtherMajor(event.target.value)}
                                         />
                                     </FormControl>
-                                    {console.log(`Othermajor:${otherMajor}`)}
                                 </div>
                             )
                             : <div />
                     }
-                    {console.log(`major:${major}`)}
-                </Grid>
-                <Grid item xs={12} md={6}>
+                </div>
+                <div  className={'section'}>
+                    <FormLabel>What are your available days?</FormLabel>
                         <FormControl>
-                            <FormLabel>What are your available days?</FormLabel>
-                            <FormGroup row>
+                            <FormGroup className={'MultipleSelect'}>
                                 {availableDays.map((day) => (
                                     <FormControlLabel
                                         control={<Checkbox name={day} onClick={handleDaysToggle(day)} />}
                                         label={`${day} After 18:00`}
                                     />
                                 ))}
-                                {console.log(`Available Days:${dayList}`)}
                             </FormGroup>
                         </FormControl>
-                </Grid>
-                <Grid item xs={12} md={6}>
-                    <InputLabel>Technical Skills (Optional)</InputLabel>
-                    <FormControl>
+                </div>
+                <InputLabel>Technical Skills (Optional)</InputLabel>
+                <div  className={'section'}>
+                    <FormControl className={'TechnicalSkillSelect'}>
                         <FormLabel>Programing Languages</FormLabel>
                         <FormGroup>
                             {programingLanguages.map((skill) => (
@@ -135,7 +129,7 @@ export default function SkillsAndAvb({
                             ))}
                         </FormGroup>
                     </FormControl>
-                    <FormControl>
+                    <FormControl className={'TechnicalSkillSelect'}>
                         <FormLabel>Web Development</FormLabel>
                         <FormGroup>
                             {webDev.map((skill) => (
@@ -147,7 +141,7 @@ export default function SkillsAndAvb({
                             ))}
                         </FormGroup>
                     </FormControl>
-                    <FormControl>
+                    <FormControl className={'TechnicalSkillSelect'}>
                         <FormLabel>Mobile Development</FormLabel>
                         <FormGroup>
                             {mobileDev.map((skill) => (
@@ -159,8 +153,8 @@ export default function SkillsAndAvb({
                             ))}
                         </FormGroup>
                     </FormControl>
-                    <FormControl>
-                        <FormLabel>Version Control</FormLabel>
+                    <FormControl className={'TechnicalSkillSelect'}>
+                        <FormLabel>Version Control and Deployment</FormLabel>
                         <FormGroup>
                             {versionControl.map((skill) => (
                                 <FormControlLabel
@@ -171,7 +165,7 @@ export default function SkillsAndAvb({
                             ))}
                         </FormGroup>
                     </FormControl>
-                    <FormControl>
+                    <FormControl className={'TechnicalSkillSelect'}>
                         <FormLabel>Google Techs</FormLabel>
                         <FormGroup>
                             {googleTech.map((skill) => (
@@ -183,7 +177,7 @@ export default function SkillsAndAvb({
                             ))}
                         </FormGroup>
                     </FormControl>
-                    <FormControl>
+                    <FormControl className={'TechnicalSkillSelect'}>
                         <FormLabel>Other</FormLabel>
                         <div>
                             <FormGroup>
@@ -194,12 +188,11 @@ export default function SkillsAndAvb({
                                         onClick={handleTechToggle(skill)}
                                     />
                                 ))}
-                                {console.log(`Tech Skills:${skillList}`)}
                             </FormGroup>
                         </div>
                     </FormControl>
-                </Grid>
-                </Grid>
+                </div>
+            </div>
         </>
     )
 }

@@ -9,7 +9,6 @@ import { Link } from 'react-router-dom'
 const ContentCard = (props) => {
   const { technology, style } = props
   const { Name, ImageUrl, route } = technology
-  console.log("route:" + route);
   return (
       <div style={style} className="ContentCard">
         <Card className="card" elevation={1}>

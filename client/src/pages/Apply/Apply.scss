@@ -1,0 +1,58 @@
+.apply{
+  .ApplicationStepper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .stepContainer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+.FormContainer{
+  max-width: 700px;
+  width: 80%;
+  margin: auto;
+  .section{
+    margin: 20px 0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    .multiLineInput, .multiLineInputContainer{
+      width: 100%;
+    }
+    .multiLineInput{
+      margin: 20px 0;
+    }
+    .MultipleSelect{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .TechnicalSkillSelect{
+      margin: 10px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .FormContainer{
+    .section{
+      flex-direction: column;
+      .MultipleSelect{
+        justify-content: start;
+      }
+    }
+  }
+}

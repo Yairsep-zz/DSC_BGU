@@ -62,11 +62,60 @@ export default function ApplicationStepper() {
   const [activeStep, setActiveStep] = useState(0)
   const steps = getSteps()
 
+  const CheckPersonalInfo = () =>{
+    if (fullName === ''){
+      alert('Please Enter your Full Name')
+      return false
+    }
+    if (fullName.length < 4) {
+      alert('Name should be at least 4 characters long.')
+      return false
+    }
+    if (email === ''){
+      alert('Please Enter your Email')
+      return false
+    }
+    if (email.length < 5) {
+      alert('Email should be at least 5 characters long.')
+      return false
+    }
+    if(email.search('@') === -1){
+      alert('Please Enter a valid Email')
+      return false
+    }
+    if (phoneNumber === ''){
+      alert('Please Enter your phone number')
+      return false
+    }
+    if (phoneNumber.length < 9) {
+     alert('Phone Number should be at least 9 characters long.')
+      return false
+    }
+    if (!(/^\d+$/.test(phoneNumber))) {
+     alert('Phone Number should contain only numbers.')
+      return false
+    }
+    if (resume == null) {
+      alert('resume is missing.')
+      return false
+    }
+    return true
+  }
+
   const handleNext = () => {
     if (activeStep === steps.length - 1){ Submit()}
-    else{setActiveStep((prevActiveStep) => prevActiveStep + 1)}
-
-
+    else{setActiveStep((prevActiveStep) =>{
+      if (prevActiveStep === 0 && !CheckPersonalInfo()){
+        return prevActiveStep
+      }
+      if(prevActiveStep === 1){
+        if ((major == 'Other' && otherMajor.length === 0) || (major.length === 0)) {
+          alert("Major can't be empty.");
+          return prevActiveStep
+        }
+      }
+      return prevActiveStep + 1
+    })}
   }
 
   const handleBack = () => {
@@ -124,12 +173,11 @@ export default function ApplicationStepper() {
 
   const Submit = async () => {
     errors = []
-
-    if (fullName.length < 5) {
+    if (fullName.length < 4) {
       errors.push('Name should be at least 5 charcters long.')
     }
 
-    if (email.length < 5) {
+    if (email.length < 4) {
       errors.push('Email should be at least 5 charcters long.')
     }
     if (email.split('').filter((x) => x === '@').length !== 1) {
@@ -154,19 +202,13 @@ export default function ApplicationStepper() {
       errors.push("WhyJoin can't be empty.")
     }
 
-    if (resume == null) {
-      errors.push('resume is missing.')
-    }
 
-    console.log('**********************')
-    console.log(errors)
+
     if (errors.length === 0) {
       try {
         const storageRef = firebase.storage().ref('Resumes/')
-        const fileRef = storageRef.child(`${fullName} CV`)
-        await fileRef.put(resume).then(() => {
-          console.log('Uploaded a file')
-        })
+        const fileRef = storageRef.child(`${fullName} CV - ${Date.now().toString()}`)
+        await fileRef.put(resume)
         // TODO : fix cv, information in : https://firebase.google.com/docs/storage/web/create-reference
         await applications_Collection.add({
           Name: fullName,
@@ -182,7 +224,6 @@ export default function ApplicationStepper() {
         })
 
         history.push('/Apply/Success')
-        console.log('Submit clicked')
       }
       catch (e) {
         history.push('/Apply/Failed')
@@ -190,12 +231,12 @@ export default function ApplicationStepper() {
     }
     else {
       console.log(errors)
-      alert (errors)
+      alert('There is a problem with the data you sent, please recheck yourself')
     }
   }
 
   return (
-      <div className={classes.root}>
+      <div className={"ApplicationStepper"}>
         <Stepper activeStep={activeStep} alternativeLabel>
           {steps.map((label) => (
               <Step key={label}>
@@ -203,7 +244,7 @@ export default function ApplicationStepper() {
               </Step>
           ))}
         </Stepper>
-        <div style={{display: "flex"}}>
+        <div className={'stepContainer'}>
           {activeStep === steps.length ? (
               <div>
                 <Typography className={classes.instructions}>
@@ -231,8 +272,6 @@ export default function ApplicationStepper() {
               </div>
           )}
         </div>
-        {console.log("!!!!!")}
-        {console.log(errors)}
       </div>
   )
 }

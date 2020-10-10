@@ -2,6 +2,7 @@ import React from 'react'
 import Grid from '@material-ui/core/Grid'
 import TextField from '@material-ui/core/TextField'
 import { FormLabel, Input } from '@material-ui/core'
+import '../Apply.scss'
 
 export default function PersonalInfo({
                                        data: {
@@ -16,10 +17,11 @@ export default function PersonalInfo({
                                      }) {
   return (
       <>
-        <Grid container spacing={3}>
-          <Grid item xs={12} md={6}>
+        <div className={'FormContainer'}>
+          <div>
             <TextField
                 required
+                error={fullName!=='' && fullName.length<4}
                 id="fullname"
                 label="Full Name"
                 fullWidth
@@ -27,10 +29,11 @@ export default function PersonalInfo({
                 value={fullName}
                 onChange={({ target: { value } }) => setFullName(value)}
             />
-          </Grid>
-          <Grid item xs={12} md={6}>
+          </div>
+          <div>
             <TextField
                 required
+                error={email !=='' && (email.length < 5 || email.search('@') === -1)}
                 id="email"
                 label="Email Address"
                 fullWidth
@@ -38,9 +41,10 @@ export default function PersonalInfo({
                 value={email}
                 onChange={({ target: { value } }) => setEmail(value)}
             />
-          </Grid>
-          <Grid item xs={12} md={6}>
+          </div>
+          <div>
             <TextField
+                error={phoneNumber !=='' && (phoneNumber.length < 9 || !(/^\d+$/.test(phoneNumber)))}
                 type="number"
                 required
                 id="phone"
@@ -50,8 +54,8 @@ export default function PersonalInfo({
                 value={phoneNumber}
                 onChange={({ target: { value } }) => setPhoneNumber(value)}
             />
-          </Grid>
-          <Grid item xs={12} md={6}>
+          </div>
+          <div>
             <div style={{
               marginTop: 16,
               display: 'flex',
@@ -61,7 +65,7 @@ export default function PersonalInfo({
               <FormLabel
                   style={{ alignSelf: 'center' }}
               >
-                Please Upload your resume
+                Please Upload your resume *
               </FormLabel>
               <Input
                   type="file"
@@ -71,10 +75,8 @@ export default function PersonalInfo({
                   onChange={({ target: { files } }) => setResume(files[0])}
               />
             </div>
-          </Grid>
-          {console.log("*********")}
-          {console.log(fullName)}
-        </Grid>
+          </div>
+        </div>
       </>
   )
 }
