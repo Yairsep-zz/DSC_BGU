@@ -22,12 +22,13 @@
     }
     .content{
       .socialRow{
+        padding-top: 10px;
         height: 20px;
-        display: flex;
+        display: compact;
         justify-content: space-around;
         .socialIcon{
           color: #2196f3;
-          height: 30px;
+          margin-left: 10px;
         }
       }
     }

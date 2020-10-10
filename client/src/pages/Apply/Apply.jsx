@@ -4,7 +4,7 @@ import ApplicationStepper from './Appliction/AttemptApplication'
 
 function Apply() {
   return (
-    <div>
+    <div style={{marginTop: "30px"}}>
       <Typography variant="h2" gutterBottom className="header">
         Club Member Application
       </Typography>

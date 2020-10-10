@@ -7,12 +7,12 @@ const TechnologiesList = require('./TechnologiesList.json')
 function Content() {
 
     return (
-        <div className="ContentPage">
+        <div className="ContentPage" style={{marginTop: "30px"}}>
             <Typography variant="h2" gutterBottom className="header">
                 Technologies
             </Typography>
             <p style={{ fontSize: 20, marginLeft: 50 , marginTop: 14, textAlign: 'justify' }}>
-                These are some of the technologies we mainly focus at DSC BGU
+                These are the technologies we focus at DSC BGU
             </p>
             <div className="ContentCards">
                 {TechnologiesList.map((technology, i) => (

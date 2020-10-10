@@ -5,7 +5,7 @@
   .card {
     margin: 30px;
     padding: 10px;
-    //display: flex;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     width: 300px;
@@ -27,7 +27,6 @@
     }
     .content {
       padding: 50;
-      padding-left: 20%;
       .socialRow {
         height: 20px;
         display: flex;

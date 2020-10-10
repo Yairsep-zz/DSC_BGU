@@ -10,10 +10,13 @@ function Events() {
 
   return (
     <div>
-      <div className="EventsPage">
+      <div className="EventsPage" style={{marginTop: "30px"}}>
         <Typography variant="h2" gutterBottom className="header">
           Events
         </Typography>
+        <p style={{ fontSize: 20, marginLeft: 50 , marginTop: 14, textAlign: 'justify' }}>
+          Check out our upcoming events
+        </p>
         <div className="EventsCards">
           {events.map((event, i) => (
                   <EventCard

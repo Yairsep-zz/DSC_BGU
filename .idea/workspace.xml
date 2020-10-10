@@ -25,8 +25,24 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6357ff79-d7ba-41a3-a5e1-79182789428f" name="Default Changelist" comment="Home additional Information">
+    <list default="true" id="6357ff79-d7ba-41a3-a5e1-79182789428f" name="Default Changelist" comment="Firebase route config fix">
+      <change afterPath="$PROJECT_DIR$/client/src/components/css/ClubSocialIcons.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/ClubSocialIcons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ClubSocialIcons.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/css/Technology.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Apply/Apply.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Apply/Apply.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Collabs/Collabs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Collabs/Collabs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Collabs/CollabsCard/CollabsCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Collabs/CollabsCard/CollabsCard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Content/Content.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Content/Content.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Content/TechnologiesList.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Content/TechnologiesList.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Events/Events.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Events/Events.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Events/EventsCard/EventCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Events/EventsCard/EventCard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Home/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/Home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Home/Home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Members/CoreTeam/MemberCard/MemberCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Members/CoreTeam/MemberCard/MemberCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Members/CoreTeam/MemberCard/MemberCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Members/CoreTeam/MemberCard/MemberCard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Members/Members.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Members/Members.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +85,19 @@
       <recent name="C:\Users\yairs\IdeaProjects\DSC_BGU\client\src\components\Footer" />
       <recent name="C:\Users\yairs\IdeaProjects\DSC_BGU\client\src\pages\Collabs\CollabsCard" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -332,7 +361,13 @@
       <option name="presentableId" value="LOCAL‎00039" />
       <updated>1602163329802</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL‎00040" summary="Firebase route config fix">
+      <created>1602168477593</created>
+      <option name="number" value="LOCAL‎00040" />
+      <option name="presentableId" value="LOCAL‎00040" />
+      <updated>1602168477593</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -387,7 +422,8 @@
     <MESSAGE value="Small fixes" />
     <MESSAGE value="Merge with Emi &amp; Bug fix" />
     <MESSAGE value="Home additional Information" />
-    <option name="LAST_COMMIT_MESSAGE" value="Home additional Information" />
+    <MESSAGE value="Firebase route config fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Firebase route config fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2064" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601817428904">
@@ -442,16 +478,16 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2360" y="210" width="1461" height="830" key="MergeDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601757989503" />
-    <state x="368" y="147" key="Vcs.Push.Dialog.v2" timestamp="1602163494138">
+    <state x="368" y="147" key="Vcs.Push.Dialog.v2" timestamp="1602168479815">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1602163494138" />
+    <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1602168479815" />
     <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601882010678" />
     <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1601648442417" />
-    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601968473675">
+    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602307473554">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601968473675" />
+    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602307473554" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1601284276348">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

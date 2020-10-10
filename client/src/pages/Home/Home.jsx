@@ -5,10 +5,11 @@ import { Link } from 'react-router-dom'
 import ClubSocialIcons from '../../components/ClubSocialIcons'
 import Bubbles from '../../components/Bubbles/Bubbles'
 import Typography from "@material-ui/core/Typography";
+import Icon from "@material-ui/core/Icon";
 
 function Home() {
   return (
-    <div className="container">
+    <div className="container" style={{marginTop: "30px"}}>
       <div className="row">
         <div className="col-6">
           <div className="leftSide-col">
@@ -35,7 +36,7 @@ function Home() {
             </p>
             <br />
             <Link to="/Apply" style={{ textDecoration: 'none' }}>
-              <Button variant="contained" size="large" color="primary">
+              <Button variant="contained" size="large" color="secondary" endIcon={<Icon>send</Icon>}>
                 Join DSC BGU
               </Button>
             </Link>
@@ -48,7 +49,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <Bubbles />
+      {/*<Bubbles />*/}
     </div>
   )
 }
