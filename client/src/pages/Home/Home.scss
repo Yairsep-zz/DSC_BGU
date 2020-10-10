@@ -51,6 +51,12 @@
             }
         }
         .socialContainer{display: none}
+        .content{
+            flex-direction: column;
+            .left,.right{
+                padding: 0 10%;
+            }
+        }
     }
 }
 
