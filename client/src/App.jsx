@@ -21,8 +21,8 @@ import {
 
 function App() {
   return (
-
     <Suspense fallback={<Loader />}>
+      <div style={{paddingBottom:'95px'}}>
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/home" component={Home} />
@@ -40,6 +40,7 @@ function App() {
         <Route exact path="/apply/success" component={AfterSubmit} />
         <Route exact path="/apply/failed" component={ApplicaitonFailed} />
       </Switch>
+      </div>
     </Suspense>
   )
 }

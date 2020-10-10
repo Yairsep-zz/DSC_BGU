@@ -34,7 +34,6 @@ const routes = [
 ]
 
 function NavigationBar() {
-  const [elevation, setElevation] = useState(0)
   const [showNavBar, setShowNavBar] = useState(!isMobile())
   const [anchorEl, setAnchorEl] = useState(null)
   const handleClick = (event) => {
@@ -44,23 +43,19 @@ function NavigationBar() {
   const handleClose = () => {
     setAnchorEl(null)
   }
-  const handleScroll = () => {
-    setElevation(document.getElementsByTagName('html')[0].scrollTop === 0 ? 2 : 5)
-  }
   const resize = () => {
     setShowNavBar(!isMobile())
   }
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll)
     window.addEventListener('resize', resize)
     return function cleanup() {
-      window.removeEventListener('scroll', handleScroll)
       window.removeEventListener('resize', resize)
     }
   }, [])
   return (
-    <AppBar position="sticky" className="appBar" elevation={elevation}>
-      <div className="left">
+    <AppBar position="sticky" className="appBar" elevation={5}>
+      {isMobile() && <div/>}
+      <div className="left" style={{marginLeft: isMobile() ? '50px' : '0'}}>
         <Link to="/">
           <img src="/DSCwebLogo.png" className="logo" alt="logo" />
         </Link>
