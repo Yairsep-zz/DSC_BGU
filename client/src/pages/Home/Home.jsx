@@ -42,9 +42,6 @@ function Home() {
               Join DSC BGU
             </Button>
           </Link>
-          <div className={'socialContainer'}>
-            <ClubSocialIcons />
-          </div>
         </div>
         <div className="right">
           <img alt="home_why" className="image" src="/pictures/content/home-why.png" />

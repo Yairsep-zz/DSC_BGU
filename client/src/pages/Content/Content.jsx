@@ -11,7 +11,7 @@ function Content() {
             <Typography variant="h2" gutterBottom className="header">
                 Technologies
             </Typography>
-            <p style={{ fontSize: 20, marginLeft: 50 , marginTop: 14, textAlign: 'justify' }}>
+            <p style={{ fontSize: 20, marginLeft: 50 , marginTop: 14 , marginRight: 50, textAlign: 'justify' }}>
                 These are the technologies we focus at DSC BGU
             </p>
             <div className="ContentCards">

@@ -27,8 +27,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6357ff79-d7ba-41a3-a5e1-79182789428f" name="Default Changelist" comment="Design Fixes 10.10">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/pictures/technologies/ml.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/pictures/technologies/ml.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Collabs/CollabsCard/CollabsCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Collabs/CollabsCard/CollabsCard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Contact/Contact.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Contact/Contact.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Content/Content.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Content/Content.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Home/Home.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,19 +73,6 @@
       <recent name="C:\Users\yairs\IdeaProjects\DSC_BGU\client\src\pages\Collabs\CollabsCard" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -112,6 +100,8 @@
       <workItem from="1601968434274" duration="1529000" />
       <workItem from="1601970741528" duration="444000" />
       <workItem from="1601972107945" duration="4036000" />
+      <workItem from="1602311847366" duration="899000" />
+      <workItem from="1602318196750" duration="7685000" />
     </task>
     <task id="LOCAL‎00001" summary="Firebase Configuration">
       <created>1600704325323</created>
@@ -359,7 +349,13 @@
       <option name="presentableId" value="LOCAL‎00041" />
       <updated>1602310416432</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL‎00042" summary="Design Fixes 10.10">
+      <created>1602311710820</created>
+      <option name="number" value="LOCAL‎00042" />
+      <option name="presentableId" value="LOCAL‎00042" />
+      <updated>1602311710820</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -470,16 +466,16 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2360" y="210" width="1461" height="830" key="MergeDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601757989503" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602310419648">
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602311712585">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1602168479815" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602310419648" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602311712585" />
     <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1601648442417" />
-    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602307473554">
+    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602337297327">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602307473554" />
+    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602337297327" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1601284276348">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
