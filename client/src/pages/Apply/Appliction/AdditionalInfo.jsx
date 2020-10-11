@@ -5,12 +5,9 @@ import FormLabel from '@material-ui/core/FormLabel'
 import '../Apply.scss'
 
 export default function AdditionalInformation(
-
     {
         data: {
-            voluntary,
             setVoluntary,
-            whyJoin,
             setWhyJoin
         },
     }) {
@@ -21,7 +18,7 @@ export default function AdditionalInformation(
             <div className={'FormContainer'}>
                     <div className={'section'}>
                         <FormControl className={'multiLineInputContainer'}>
-                            <FormLabel>Did you ever take part in a voluntary program? Please describe</FormLabel>
+                            <FormLabel>Have you ever done any volunteer work? Please describe</FormLabel>
                             <TextField
                                 className={'multiLineInput'}
                                 fullWidth
@@ -38,8 +35,8 @@ export default function AdditionalInformation(
                     <div className={'section'}>
                         <FormControl className={'multiLineInputContainer'}>
                             <FormLabel>
-                                Why would you like to join DSC? (Interests , projects you want to promote
-                                etc.)
+                                Why would you like to join DSC? What are you passionate to learn?
+                                What kind of project would you like to work on?
                             </FormLabel>
                             <TextField
                                 className={'multiLineInput'}

@@ -6,6 +6,7 @@ import './Projects.scss'
 import ConstructionPage from '../../components/ConstructionPage'
 
 function Projects() {
+
   const collection = useFirestore().collection('Projects')
   const projects = useFirestoreCollectionData(collection, { idField: 'id' }) // TODO: Change Const Name
 

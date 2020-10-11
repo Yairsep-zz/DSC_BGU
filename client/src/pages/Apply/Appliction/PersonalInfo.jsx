@@ -1,5 +1,4 @@
 import React from 'react'
-import Grid from '@material-ui/core/Grid'
 import TextField from '@material-ui/core/TextField'
 import { FormLabel, Input } from '@material-ui/core'
 import '../Apply.scss'
@@ -45,7 +44,7 @@ export default function PersonalInfo({
           <div>
             <TextField
                 error={phoneNumber !=='' && (phoneNumber.length < 9 || !(/^\d+$/.test(phoneNumber)))}
-                type="number"
+                type="tel"
                 required
                 id="phone"
                 label="Phone Number"

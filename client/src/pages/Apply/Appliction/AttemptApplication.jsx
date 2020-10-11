@@ -29,14 +29,6 @@ const useStyles = makeStyles(({ spacing }) => ({
   },
 }), { name: 'ApplicationStepper' })
 
-const programingLanguages = ['Java', 'Python', 'C++']
-const webDev = ['React', 'Vue', 'Angular', 'Node.js']
-const mobileDev = ['React Native', 'Flutter', 'Kotlin']
-const googleTech = ['Firebase', 'Google Cloud Platform', 'TensorFlow']
-const versionControl = ['Git']
-const skills = ['Machine Learning', 'Cyber Security']
-const availableDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday']
-
 let errors = []
 
 function getSteps() {
@@ -55,7 +47,6 @@ export default function ApplicationStepper() {
   const [skillList, setSkillList] = useState([])
   const [voluntary, setVoluntary] = useState('')
   const [whyJoin, setWhyJoin] = useState('')
-  const [shareWithUs, setShareWithUs] = useState('')
   const [displayOther, setDisplayOther] = useState(false)
   const [resume, setResume] = useState(null)
   const [dayList, setDayList] = useState([])
@@ -218,7 +209,6 @@ export default function ApplicationStepper() {
           Skills: skillList,
           Voluntary: voluntary,
           WhyJoin: whyJoin,
-          ShareWithUs: shareWithUs,
           DaysAvailable: dayList,
           cv: fileRef.fullPath,
         })

@@ -1,42 +1,24 @@
 import React from 'react'
-import Grid from '@material-ui/core/Grid'
-import TextField from '@material-ui/core/TextField'
 import {  Input } from '@material-ui/core'
 import InputLabel from '@material-ui/core/InputLabel'
 import FormControl from '@material-ui/core/FormControl'
-import FormHelperText from '@material-ui/core/FormHelperText'
 import MenuItem from '@material-ui/core/MenuItem'
 import Select from '@material-ui/core/Select'
 import FormLabel from '@material-ui/core/FormLabel'
 import FormControlLabel from '@material-ui/core/FormControlLabel'
 import Checkbox from '@material-ui/core/Checkbox'
 import FormGroup from '@material-ui/core/FormGroup'
-import Button from '@material-ui/core/Button'
 import '../Apply.scss'
 export default function SkillsAndAvb({
                                          data: {
                                              major,
                                              setMajor,
-                                             otherMajor,
                                              setOtherMajor,
                                              skillList,
                                              setSkillList,
-                                             displayOther,
-                                             setDisplayOther,
                                              dayList,
                                              setDayList
-
-                                             // ,
-                                             // programingLanguages = ['Java', 'Python', 'C++'],
-                                             // webDev = ['React', 'Vue', 'Angular', 'Node.js'],
-                                             // mobileDev = ['React Native', 'Flutter', 'Kotlin'],
-                                             // googleTech = ['Firebase', 'Google Cloud Platform', 'TensorFlow'],
-                                             // versionControl = ['Git'],
-                                             // skills = ['Machine Learning', 'Cyber Security'],
-                                             // availableDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday']
                                          },
-
-
                                      })
 
 {

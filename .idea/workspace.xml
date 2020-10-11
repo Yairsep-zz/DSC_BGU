@@ -25,11 +25,16 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6357ff79-d7ba-41a3-a5e1-79182789428f" name="Default Changelist" comment="Design Fixes 10.10">
+    <list default="true" id="6357ff79-d7ba-41a3-a5e1-79182789428f" name="Default Changelist" comment="Apply &amp; Contact design fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/AdditionalInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/AdditionalInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/ApplicationSent.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/AttemptApplication.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/AttemptApplication.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/PersonalInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/PersonalInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/SkillsAndAvb.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/SkillsAndAvb.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/Contact/Contact.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Contact/Contact.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Content/Content.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Content/Content.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Home/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Projects/Projects.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Projects/Projects.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +78,19 @@
       <recent name="C:\Users\yairs\IdeaProjects\DSC_BGU\client\src\pages\Collabs\CollabsCard" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -101,7 +119,8 @@
       <workItem from="1601970741528" duration="444000" />
       <workItem from="1601972107945" duration="4036000" />
       <workItem from="1602311847366" duration="899000" />
-      <workItem from="1602318196750" duration="7685000" />
+      <workItem from="1602318196750" duration="9966000" />
+      <workItem from="1602342100802" duration="5486000" />
     </task>
     <task id="LOCAL‎00001" summary="Firebase Configuration">
       <created>1600704325323</created>
@@ -355,7 +374,13 @@
       <option name="presentableId" value="LOCAL‎00042" />
       <updated>1602311710820</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL‎00043" summary="Apply &amp; Contact design fixed">
+      <created>1602337956184</created>
+      <option name="number" value="LOCAL‎00043" />
+      <option name="presentableId" value="LOCAL‎00043" />
+      <updated>1602337956184</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,7 +411,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="NavigationBar Update" />
     <MESSAGE value="firebase functions integrations" />
     <MESSAGE value="Firebase data update" />
     <MESSAGE value="Pictures Bank - In data directory" />
@@ -411,7 +435,8 @@
     <MESSAGE value="Home additional Information" />
     <MESSAGE value="Firebase route config fix" />
     <MESSAGE value="Design Fixes 10.10" />
-    <option name="LAST_COMMIT_MESSAGE" value="Design Fixes 10.10" />
+    <MESSAGE value="Apply &amp; Contact design fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Apply &amp; Contact design fixed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2064" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601817428904">
@@ -466,16 +491,16 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2360" y="210" width="1461" height="830" key="MergeDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601757989503" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602311712585">
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602337958002">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1602168479815" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602311712585" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602337958002" />
     <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1601648442417" />
-    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602337297327">
+    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602414909365">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602337297327" />
+    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602414909365" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1601284276348">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
