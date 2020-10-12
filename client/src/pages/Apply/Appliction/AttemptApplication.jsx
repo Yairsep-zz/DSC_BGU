@@ -90,6 +90,10 @@ export default function ApplicationStepper() {
       alert('resume is missing.')
       return false
     }
+    if (!resume.name.endsWith('.pdf') && !resume.name.endsWith('.doc') && !resume.name.endsWith('.docx')) {
+      alert('please upload PDF / WORD file')
+      return false
+    }
     return true
   }
 

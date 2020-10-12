@@ -68,6 +68,7 @@ export default function PersonalInfo({
               </FormLabel>
               <Input
                   type="file"
+                  accept=".doc,.docx,.pdf"
                   style={{
                     marginLeft: 5,
                   }}
