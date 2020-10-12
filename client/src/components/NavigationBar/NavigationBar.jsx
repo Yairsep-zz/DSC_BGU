@@ -23,10 +23,10 @@ const routes = [
     title: 'Content',
     href: '/Content',
   },
-  {
-    title: 'Contact us',
-    href: '/Contact',
-  },
+  // {
+  //   title: 'Contact us',
+  //   href: '/Contact',
+  // },
   {
     title: 'Apply',
     href: '/Apply',

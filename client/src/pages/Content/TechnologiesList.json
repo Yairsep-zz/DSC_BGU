@@ -16,7 +16,7 @@
   },
   {
     "Name":"Machine Learning",
-    "ImageUrl":"pictures/technologies/ml.jpg",
+    "ImageUrl":"pictures/technologies/machine-learning-logo.png",
     "route": "/content/ML"
   }
   ]
