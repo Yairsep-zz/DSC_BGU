@@ -5,8 +5,9 @@
   .card{
     margin: 30px;
     padding: 10px;
-    //display: flex;
-    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     width: 300px;
     height: 400px;
@@ -21,6 +22,13 @@
       }
     }
     .content{
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+      justify-content: space-between;
+      .role{
+        height: 64px;
+      }
       .socialRow{
         padding-top: 10px;
         height: 20px;
@@ -39,7 +47,7 @@
   0% {
     opacity: 0;
     transform: 'translateY(-16px)';
-  };
+  }
   100% {
     opacity: 1;
     transform: 'none';
