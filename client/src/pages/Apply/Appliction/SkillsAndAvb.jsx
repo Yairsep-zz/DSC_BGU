@@ -63,10 +63,13 @@ export default function SkillsAndAvb({
                     <FormLabel>Choose your major</FormLabel>
                     <Select fullWidth={1} onChange={({ target: { value } }) => setMajor(value)}>
                         <MenuItem value="Computer Science">Computer Science</MenuItem>
-                        <MenuItem value="Software Engineering">Software Engineering</MenuItem>
                         <MenuItem value="Industrial Engineering and Management">Industrial Engineering and Management</MenuItem>
+                        <MenuItem value="Software Engineering">Software Engineering</MenuItem>
                         <MenuItem value="Software and Information Systems Engineering">Software and Information Systems Engineering</MenuItem>
                         <MenuItem value="Management Information Systems Engineering">Management Information Systems Engineering</MenuItem>
+                        <MenuItem value="Biology">Biology</MenuItem>
+                        <MenuItem value="Psychology">Psychology</MenuItem>
+                        <MenuItem value="Art">Art</MenuItem>
                         <MenuItem value="Other">Other</MenuItem>
                     </Select>
                     {major == 'Other' ? (

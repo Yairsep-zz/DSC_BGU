@@ -25,16 +25,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6357ff79-d7ba-41a3-a5e1-79182789428f" name="Default Changelist" comment="Apply &amp; Contact design fixed">
+    <list default="true" id="6357ff79-d7ba-41a3-a5e1-79182789428f" name="Default Changelist" comment="Code cleaning">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/AdditionalInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/AdditionalInfo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/ApplicationSent.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/AttemptApplication.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/AttemptApplication.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/PersonalInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/PersonalInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/pictures/technologies/machine-learning-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/pictures/technologies/machine-learning-logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/SkillsAndAvb.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Apply/Appliction/SkillsAndAvb.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Contact/Contact.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Contact/Contact.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Home/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Projects/Projects.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Projects/Projects.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +114,7 @@
       <workItem from="1601972107945" duration="4036000" />
       <workItem from="1602311847366" duration="899000" />
       <workItem from="1602318196750" duration="9966000" />
-      <workItem from="1602342100802" duration="5486000" />
+      <workItem from="1602342100802" duration="9459000" />
     </task>
     <task id="LOCAL‎00001" summary="Firebase Configuration">
       <created>1600704325323</created>
@@ -380,7 +374,13 @@
       <option name="presentableId" value="LOCAL‎00043" />
       <updated>1602337956184</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL‎00044" summary="Code cleaning">
+      <created>1602418923364</created>
+      <option name="number" value="LOCAL‎00044" />
+      <option name="presentableId" value="LOCAL‎00044" />
+      <updated>1602418923364</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,7 +411,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="firebase functions integrations" />
     <MESSAGE value="Firebase data update" />
     <MESSAGE value="Pictures Bank - In data directory" />
     <MESSAGE value="Firebase data Updated" />
@@ -436,7 +435,8 @@
     <MESSAGE value="Firebase route config fix" />
     <MESSAGE value="Design Fixes 10.10" />
     <MESSAGE value="Apply &amp; Contact design fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Apply &amp; Contact design fixed" />
+    <MESSAGE value="Code cleaning" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code cleaning" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2064" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601817428904">
@@ -454,11 +454,11 @@
     <state x="264" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1602163395577" />
     <state x="2316" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602047258502" />
     <state x="264" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1601648060663" />
-    <state x="2208" y="-26" width="1595" height="572" maximized="true" key="DiffContextDialog" timestamp="1602046990678">
+    <state x="2208" y="-26" width="1595" height="572" maximized="true" key="DiffContextDialog" timestamp="1602577623348">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2338" y="120" key="DiffContextDialog/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1601559079951" />
-    <state x="2208" y="-26" width="1595" height="572" maximized="true" key="DiffContextDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602046990678" />
+    <state x="2208" y="-26" width="1595" height="572" maximized="true" key="DiffContextDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602577623348" />
     <state x="465" y="261" key="Github.CreateGistDialog" timestamp="1600698989897">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -491,16 +491,16 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2360" y="210" width="1461" height="830" key="MergeDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601757989503" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602337958002">
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602418927046">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1602168479815" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602337958002" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602418927046" />
     <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1601648442417" />
-    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602414909365">
+    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602522093847">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602414909365" />
+    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602522093847" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1601284276348">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
