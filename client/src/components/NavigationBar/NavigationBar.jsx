@@ -27,10 +27,10 @@ const routes = [
   //   title: 'Contact us',
   //   href: '/Contact',
   // },
-  {
-    title: 'Apply',
-    href: '/Apply',
-  },
+  // {
+    // title: 'Apply',
+  //   href: '/Apply',
+  // },
 ]
 
 function NavigationBar() {
@@ -63,11 +63,18 @@ function NavigationBar() {
       <div className="right">
         {
           showNavBar
-            ? routes.map(({ href, title }) => (
-              <NavLink key={href} to={href.toLocaleLowerCase().trim()} activeClassName="link-active" className="link">
-                {title.toUpperCase()}
-              </NavLink>
-            ))
+            ? <div>
+              {
+              routes.map(({ href, title }) => (
+                <NavLink key={href} to={href.toLocaleLowerCase().trim()} activeClassName="link-active" className="link">
+                  {title.toUpperCase()}
+                </NavLink>
+                ))
+              }
+              <a href={"https://gdsc.community.dev/accounts/login/?next=/ben-gurion-university-of-the-negev/"} className="link" target="_balnk" >
+                  {"JOIN US"}
+                </a>
+              </div>
             : (
               <div>
                 <IconButton onClick={handleClick}>
@@ -87,6 +94,11 @@ function NavigationBar() {
                       </MenuItem>
                     </NavLink>
                   ))}
+                  <a href={"https://gdsc.community.dev/accounts/login/?next=/ben-gurion-university-of-the-negev/"} className="NavBarMenuItem" target="_balnk">
+                  <MenuItem onClick={handleClose}>
+                      JOIN US
+                  </MenuItem>
+                </a>
                 </Menu>
               </div>
             )

@@ -37,11 +37,11 @@ function Home() {
             and universities abroad and more.
           </p>
           <br />
-          <Link to="/Apply" style={{ textDecoration: 'none' }}>
+          <a href="https://gdsc.community.dev/accounts/login/?next=/ben-gurion-university-of-the-negev/" style={{ textDecoration: 'none' }} target="_balnk">
             <Button variant="contained" size="large" color="secondary" endIcon={<Icon>send</Icon>}>
               Join DSC BGU
             </Button>
-          </Link>
+          </a>
         </div>
         <div className="right">
           <img alt="home_why" className="image" src="/pictures/content/home-why.png" />
